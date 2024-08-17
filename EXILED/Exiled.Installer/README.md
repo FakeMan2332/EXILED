@@ -24,11 +24,11 @@ Additional Arguments:
   Arguments passed to the application that is being run.
 ```
 
------
+---
 
 #### Examples
 
-- ##### Basic installation in the folder you are in
+-   ##### Basic installation in the folder you are in
 
 ```
 user@user:~/SCP# ./Exiled.Installer-Linux --pre-releases
@@ -43,7 +43,7 @@ Trying to find release..
 Release found!
 PRE: True | ID: 87710626 | TAG: 6.0.0-beta.18
 Asset found!
-ID: 90263995 | NAME: Exiled.tar.gz | SIZE: 1027928 | URL: https://api.github.com/repos/Exiled-Official/Exiled-EA/releases/assets/90263995 | DownloadURL: https://github.com/Exiled-Official/Exiled-EA/releases/download/6.0.0-beta.18/Exiled.tar.gz
+ID: 90263995 | NAME: Exiled.tar.gz | SIZE: 1027928 | URL: https://api.github.com/repos/ExMod-Team/EXILED-EA/releases/assets/90263995 | DownloadURL: https://github.com/ExMod-Team/EXILED-EA/releases/download/6.0.0-beta.18/Exiled.tar.gz
 Processing 'EXILED/Plugins/dependencies/0Harmony.dll'
 Extracting '0Harmony.dll' into 'YourAppDataPath/EXILED/Plugins/dependencies/0Harmony.dll'...
 Processing 'EXILED/Plugins/dependencies/Exiled.API.dll'
@@ -73,7 +73,7 @@ Extracting 'Exiled.Loader.dll' into 'YourAppDataPath/SCP Secret Laboratory/Plugi
 Installation complete
 ```
 
-- ##### Installation in a specific folder, specific version and specific appdata folder
+-   ##### Installation in a specific folder, specific version and specific appdata folder
 
 ```
 user@user:~/SCP# ./Exiled.Installer-Linux --appdata /user/SCP --exiled /user/SCP
@@ -88,7 +88,7 @@ Trying to find release..
 Release found!
 PRE: False | ID: 87710626 | TAG: 6.0.0-beta.18
 Asset found!
-ID: 90263995 | NAME: Exiled.tar.gz | SIZE: 1027928 | URL: https://api.github.com/repos/Exiled-Official/Exiled-EA/releases/assets/90263995 | DownloadURL: https://github.com/Exiled-Official/Exiled-EA/releases/download/6.0.0-beta.18/Exiled.tar.gz
+ID: 90263995 | NAME: Exiled.tar.gz | SIZE: 1027928 | URL: https://api.github.com/repos/ExMod-Team/EXILED-EA/releases/assets/90263995 | DownloadURL: https://github.com/ExMod-Team/EXILED-EA/releases/download/6.0.0-beta.18/Exiled.tar.gz
 Processing 'EXILED/Plugins/dependencies/0Harmony.dll'
 Extracting '0Harmony.dll' into '/user/SCP/EXILED/Plugins/dependencies/0Harmony.dll'...
 Processing 'EXILED/Plugins/dependencies/Exiled.API.dll'

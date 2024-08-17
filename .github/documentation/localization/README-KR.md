@@ -1,10 +1,10 @@
 <h1 align="center">EXILED - EXtended In-runtime Library for External Development</h1>
 <div align="center">
     
-[<img src="https://img.shields.io/github/actions/workflow/status/Exiled-Official/EXILED/main.yml?style=for-the-badge&logo=githubactions&label=build" alt="CI"/>](https://github.com/Exiled-Official/EXILED/actions/workflows/main.yml/badge.svg?branch=master)
-<a href="https://github.com/Exiled-Official/EXILED/releases"><img src="https://img.shields.io/github/v/release/Exiled-Official/EXILED?display_name=tag&style=for-the-badge&logo=gitbook&label=Release" href="https://github.com/Exiled-Official/EXILED/releases" alt="GitHub Releases"></a>
-<img src="https://img.shields.io/github/downloads/Exiled-Official/EXILED/total?style=for-the-badge&logo=github" alt="Downloads">
-![Github Commits](https://img.shields.io/github/commit-activity/w/Exiled-Official/EXILED/apis-rework?style=for-the-badge&logo=git)
+[<img src="https://img.shields.io/github/actions/workflow/status/ExMod-Team/EXILED/main.yml?style=for-the-badge&logo=githubactions&label=build" alt="CI"/>](https://github.com/ExMod-Team/EXILED/actions/workflows/main.yml/badge.svg?branch=master)
+<a href="https://github.com/ExMod-Team/EXILED/releases"><img src="https://img.shields.io/github/v/release/ExMod-Team/EXILED?display_name=tag&style=for-the-badge&logo=gitbook&label=Release" href="https://github.com/ExMod-Team/EXILED/releases" alt="GitHub Releases"></a>
+<img src="https://img.shields.io/github/downloads/ExMod-Team/EXILED/total?style=for-the-badge&logo=github" alt="Downloads">
+![Github Commits](https://img.shields.io/github/commit-activity/w/ExMod-Team/EXILED/apis-rework?style=for-the-badge&logo=git)
 <a href="https://discord.gg/PyUkWTg">
     <img src="https://img.shields.io/discord/656673194693885975?style=for-the-badge&logo=discord" alt="Chat on Discord">
 </a>
@@ -13,8 +13,8 @@
 
 EXILED는 SCP: 비밀 연구소 서버들을 위한 고급 플러그인 프레임워크입니다. 개발자가 게임의 코드를 바꾸거나 자신만의 기능을 넣을 수 있는 이벤트 시스템을 제공하며, 모든 EXILED 이벤트들은 Harmony로 작성되어 직접적으로 서버의 어셈블리를 바꿀 필요가 없어, 2가지의 장점을 만들어냅니다.
 
-- 첫째로, 모든 프레임워크의 코드는 자유롭게 공유되거나 배포될 수 있어, 개발자들이 _어떻게_ 프레임워크가 작동하고 기능을 추가하고나 바꾸는 방법을 배울 수 있습니다.
-- 둘째로, 프레임워크가 관련된 모든 코드가 서버 어셈블리 밖에서 작동되기 때문에, 만약 작은 업데이트가 존재하더라도, 프레임워크에는 아주 작은 영향을 미치게 됩니다. 이로 하여금 계속되는 업데이트와의 호환성이 (거의) 보장되며, 업데이트를 _필요할 때_ 할 수 있습니다.
+-   첫째로, 모든 프레임워크의 코드는 자유롭게 공유되거나 배포될 수 있어, 개발자들이 _어떻게_ 프레임워크가 작동하고 기능을 추가하고나 바꾸는 방법을 배울 수 있습니다.
+-   둘째로, 프레임워크가 관련된 모든 코드가 서버 어셈블리 밖에서 작동되기 때문에, 만약 작은 업데이트가 존재하더라도, 프레임워크에는 아주 작은 영향을 미치게 됩니다. 이로 하여금 계속되는 업데이트와의 호환성이 (거의) 보장되며, 업데이트를 _필요할 때_ 할 수 있습니다.
 
 # EXILED 설치하기
 
@@ -24,63 +24,63 @@ EXILED의 설치 과정은 상당히 간단합니다. 노스우드의 Plugin API
 
 # Windows
 
-### 설치 프로그램 사용 ([설치 프로그램 설명 (영어)](https://github.com/Exiled-Official/EXILED/blob/master/Exiled.Installer/README.md))
+### 설치 프로그램 사용 ([설치 프로그램 설명 (영어)](https://github.com/ExMod-Team/EXILED/blob/master/Exiled.Installer/README.md))
 
 **주의사항**: 설치 프로그램을 사용하기 전에, SCP: 비밀 연구소 서버를 실행할 유저와 같은 유저인지, 또는 관리자 권한을 가진 유저인지 확인해주세요.
 
-- **[여기에서](https://github.com/Exiled-Official/EXILED/releases) `Exiled.Installer-Win.exe`** 를 다운로드합니다. (Assets 클릭 -> Exiled.Installer-Win.exe 클릭)
-- 서버와 같은 폴더에 프로그램을 위치시킵니다. (서버를 다운로드 받지 않았다면 설치하세요.)
-- **`Exiled.Installer.exe`** 를 실행하거나 프리릴리즈 버전을 설치하려면 **이 [.bat 파일](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)을 받아** 서버 폴더에 넣고 실행합니다.
-- 플러그인을 다운로드하고 설치하려면, 아래 [플러그인 설치](#플러그인-설치) 문단을 참고하세요.
-  **주의사항:** EXILED를 원격 서버에 설치하려고 한다면, .exe 파일을 실행할 때 SCP: 비밀 연구소 서버를 실행할 유저와 같은 유저인지, 또는 관리자 권한을 가진 유저인지 확인해주세요.
+-   **[여기에서](https://github.com/ExMod-Team/EXILED/releases) `Exiled.Installer-Win.exe`** 를 다운로드합니다. (Assets 클릭 -> Exiled.Installer-Win.exe 클릭)
+-   서버와 같은 폴더에 프로그램을 위치시킵니다. (서버를 다운로드 받지 않았다면 설치하세요.)
+-   **`Exiled.Installer.exe`** 를 실행하거나 프리릴리즈 버전을 설치하려면 **이 [.bat 파일](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)을 받아** 서버 폴더에 넣고 실행합니다.
+-   플러그인을 다운로드하고 설치하려면, 아래 [플러그인 설치](#플러그인-설치) 문단을 참고하세요.
+    **주의사항:** EXILED를 원격 서버에 설치하려고 한다면, .exe 파일을 실행할 때 SCP: 비밀 연구소 서버를 실행할 유저와 같은 유저인지, 또는 관리자 권한을 가진 유저인지 확인해주세요.
 
 ### 수동 설치
 
-- **`Exiled.tar.gz`를 [여기서](https://github.com/Exiled-Official/EXILED/releases)** 다운로드합니다.
-- 안의 내용을 [7Zip](https://www.7-zip.org/) 이나 [WinRar](https://www.win-rar.com/download.html?&L=6)로 압축을 풀어주세요.
-- **`EXILED`** 폴더를 **`%appdata%`** 로 옮깁니다. \*주의사항: 이 폴더는 `C:\Users\%UserName%\AppData\Roaming\SCP Secret Laboratory`**_가 아닌_** `C:\Users\%UserName%\AppData\Roaming`에 위치해야만 하며, `(...)\AppData` 가 아닌, **무조건** `(...)\AppData\Roaming`에 위치해야 합니다.\*
-- **`SCP Secret Laboratory`** 폴더를 **`%appdata%`** 로 옮기세요.
-  - Windows 10 & 11:
-    `%appdata%`를 Windows 검색 창에 입력하거나, Windows 탐색기 상단 바에 입력하세요.
-  - 다른 Windows 버전:
-    `Win + R`을 누르고 `%appdata%`를 입력하세요.
+-   **`Exiled.tar.gz`를 [여기서](https://github.com/ExMod-Team/EXILED/releases)** 다운로드합니다.
+-   안의 내용을 [7Zip](https://www.7-zip.org/) 이나 [WinRar](https://www.win-rar.com/download.html?&L=6)로 압축을 풀어주세요.
+-   **`EXILED`** 폴더를 **`%appdata%`** 로 옮깁니다. \*주의사항: 이 폴더는 `C:\Users\%UserName%\AppData\Roaming\SCP Secret Laboratory`**_가 아닌_** `C:\Users\%UserName%\AppData\Roaming`에 위치해야만 하며, `(...)\AppData` 가 아닌, **무조건** `(...)\AppData\Roaming`에 위치해야 합니다.\*
+-   **`SCP Secret Laboratory`** 폴더를 **`%appdata%`** 로 옮기세요.
+    -   Windows 10 & 11:
+        `%appdata%`를 Windows 검색 창에 입력하거나, Windows 탐색기 상단 바에 입력하세요.
+    -   다른 Windows 버전:
+        `Win + R`을 누르고 `%appdata%`를 입력하세요.
 
 ### 플러그인 설치
 
 자, 이제 모든 설치가 완료되었습니다! EXILED는 이제 설치되었고 다음 서버 구동시 활성화 될 것입니다. EXILED 자체로는 아무것도 하지 않습니다. **[저희의 디스코드 서버](https://discord.gg/PyUkWTg)** 에서 새롭고 재미있는 플러그인을 찾아보세요!
 
-- 플러그인을 설치하려면:
-  - [_플러그인의_ 릴리즈 페이지](https://i.imgur.com/u34wgPD.jpg)에서 플러그인을 다운로드하세요. (**무조건 `.dll` 파일 형식이어야 합니다!**)
-  - 그리고 파일을 옮기세요! `C:\Users\%UserName%\AppData\Roaming\EXILED\Plugins` 로 .dll 파일을 옮기세요. (Win + R을 누르고, `%appdata%`을 적는 것으로 이동할 수 있습니다.)
+-   플러그인을 설치하려면:
+    -   [_플러그인의_ 릴리즈 페이지](https://i.imgur.com/u34wgPD.jpg)에서 플러그인을 다운로드하세요. (**무조건 `.dll` 파일 형식이어야 합니다!**)
+    -   그리고 파일을 옮기세요! `C:\Users\%UserName%\AppData\Roaming\EXILED\Plugins` 로 .dll 파일을 옮기세요. (Win + R을 누르고, `%appdata%`을 적는 것으로 이동할 수 있습니다.)
 
 # 리눅스
 
-### 설치 프로그램 사용 ([설치 프로그램 설명 (영어)](https://github.com/Exiled-Official/EXILED/blob/master/Exiled.Installer/README.md))
+### 설치 프로그램 사용 ([설치 프로그램 설명 (영어)](https://github.com/ExMod-Team/EXILED/blob/master/Exiled.Installer/README.md))
 
 **주의사항**: 설치 프로그램을 사용하기 전에, SCP: 비밀 연구소 서버를 실행할 유저와 같은 유저인지, 또는 `root` 유저인지 확인해주세요.
 
-- **`Exiled.Installer-Linux`** 를 **[여기서](https://github.com/Exiled-Official/EXILED/releases)** 다운로드 하세요. (Assets 클릭 -> 설치 프로그램 다운로드)
-- **`./Exiled.Installer-Linux --path /path/to/server`** 를 입력해 설치하거나, 파일을 서버 폴더 안에 위치시키고 터미널을 이동시킨 다음 (`cd`) **`./Exiled.Installer-Linux`** 를 입력하세요.
-- 프리릴리즈 버전을 원한다면, 실행 시 **`--pre-releases`** 를 추가하세요. 예시: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
-- 또 다른 예시: 만약 `Exiled.Installer-Linux`를 서버 폴더 안에 위치시켰다면: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`** 를 입력하세요.
-- 플러그인을 다운로드하고 설치하려면 [플러그인 설치](#플러그인-설치-1) 문단을 참고해주세요.
+-   **`Exiled.Installer-Linux`** 를 **[여기서](https://github.com/ExMod-Team/EXILED/releases)** 다운로드 하세요. (Assets 클릭 -> 설치 프로그램 다운로드)
+-   **`./Exiled.Installer-Linux --path /path/to/server`** 를 입력해 설치하거나, 파일을 서버 폴더 안에 위치시키고 터미널을 이동시킨 다음 (`cd`) **`./Exiled.Installer-Linux`** 를 입력하세요.
+-   프리릴리즈 버전을 원한다면, 실행 시 **`--pre-releases`** 를 추가하세요. 예시: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
+-   또 다른 예시: 만약 `Exiled.Installer-Linux`를 서버 폴더 안에 위치시켰다면: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`** 를 입력하세요.
+-   플러그인을 다운로드하고 설치하려면 [플러그인 설치](#플러그인-설치-1) 문단을 참고해주세요.
 
 ### 수동 설치
 
-- SCP 서버를 실행하는 유저와 같은지 **확인하세요.**
-- **`Exiled.tar.gz`** 를 **[여기서](https://github.com/Exiled-Official/EXILED/releases)** 다운로드하세요. (SSH: 우클릭으로 `Exiled.tar.gz` 링크를 복사하고, **`wget (다운로드-링크)`** 를 입력하세요.)
-- 현재 폴더로 압축을 풀려면, **`tar -xzvf EXILED.tar.gz`** 를 입력하세요.
-- **`EXILED`** 폴더를 **`~/.config`** 로 위치시키세요. \*주의사항: 이 폴더는 `~/.config/SCP Secret Laboratory` **_가 아닌_** `~/.config`에 위치해야 합니다. (SSH: **`mv EXILED ~/.config/`**)
-- **`SCP Secret Laboratory`** 폴더를 **`~/.config`** 에 위치시키세요. \*주의사항: 이 폴더는 `~/.config/SCP Secret Laboratory` **_가 아닌_** `~/.config`에 위치해야 합니다. (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
+-   SCP 서버를 실행하는 유저와 같은지 **확인하세요.**
+-   **`Exiled.tar.gz`** 를 **[여기서](https://github.com/ExMod-Team/EXILED/releases)** 다운로드하세요. (SSH: 우클릭으로 `Exiled.tar.gz` 링크를 복사하고, **`wget (다운로드-링크)`** 를 입력하세요.)
+-   현재 폴더로 압축을 풀려면, **`tar -xzvf EXILED.tar.gz`** 를 입력하세요.
+-   **`EXILED`** 폴더를 **`~/.config`** 로 위치시키세요. \*주의사항: 이 폴더는 `~/.config/SCP Secret Laboratory` **_가 아닌_** `~/.config`에 위치해야 합니다. (SSH: **`mv EXILED ~/.config/`**)
+-   **`SCP Secret Laboratory`** 폴더를 **`~/.config`** 에 위치시키세요. \*주의사항: 이 폴더는 `~/.config/SCP Secret Laboratory` **_가 아닌_** `~/.config`에 위치해야 합니다. (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
 
 ### 플러그인 설치
 
 자, 이제 모든 설치가 완료되었습니다! EXILED는 이제 설치되었고 다음 서버 구동시 활성화 될 것입니다. EXILED 자체로는 아무것도 하지 않습니다. **[저희의 디스코드 서버](https://discord.gg/PyUkWTg)** 에서 새롭고 재미있는 플러그인을 찾아보세요!
 
-- 플러그인을 설치하려면:
-  - [_플러그인의_ 릴리즈 페이지](https://i.imgur.com/u34wgPD.jpg)에서 플러그인을 다운로드하세요. (**무조건 `.dll` 파일 형식이어야 합니다!**)
-  - 그리고 파일을 옮기세요!
-    `~/.config/EXILED/Plugins` 로 .dll 파일을 옮기세요. (만약 SSH를 root로 사용한다면, `/home/(SCP 서버 유저)` 안에 있는 올바른 `.config`를 찾아보세요.)
+-   플러그인을 설치하려면:
+    -   [_플러그인의_ 릴리즈 페이지](https://i.imgur.com/u34wgPD.jpg)에서 플러그인을 다운로드하세요. (**무조건 `.dll` 파일 형식이어야 합니다!**)
+    -   그리고 파일을 옮기세요!
+        `~/.config/EXILED/Plugins` 로 .dll 파일을 옮기세요. (만약 SSH를 root로 사용한다면, `/home/(SCP 서버 유저)` 안에 있는 올바른 `.config`를 찾아보세요.)
 
 # 설정
 
@@ -91,17 +91,17 @@ EXILED 자체도 몇 가지 설정을 가지고 있습니다. 이 설정들은 �
 
 # 개발자들을 위한 정보
 
-만약 EXILED 플러그인을 만들고 싶다면, 사실 간단합니다. 튜토리얼을 원한다면 [여기 (영어)](https://github.com/Exiled-Official/EXILED/blob/master/GettingStarted.md)를 읽어주세요.
+만약 EXILED 플러그인을 만들고 싶다면, 사실 간단합니다. 튜토리얼을 원한다면 [여기 (영어)](https://github.com/ExMod-Team/EXILED/blob/master/GettingStarted.md)를 읽어주세요.
 
 좀 더 상세하고 자주 업데이트 되는 튜토리얼을 원한다면, [EXILED 웹사이트](https://exiled.to)를 방문해보세요.
 
 하지만 플러그인을 만들기 전에, 몇 가지 주의사항을 알아두세요:
 
-- 당신의 플러그인은 **무조건** `Exiled.API.Features.Plugin<>`을 상속받는 클래스를 가지고 있어야 합니다. 없다면 EXILED 실행 시 플러그인이 작동되지 않습니다.
-- 플러그인이 실행되면, `OnEnabled()` 메서드가 **바로** 실행됩니다. 다른 플러그인이 불러와질 때까지 기다리지도 않고, 서버 시작 절차가 끝날 때가지 기다리지도 않습니다. **_아무것도 기다리지 않아요._** `OnEnabled()` 메소드을 구현할 때, 아직 설정이 되지 않은 것들, 예를 들어 `ServerConsole.Port`, 혹은 `PlayerManager.localPlayer` 을 사용하고 있지는 않은지 확인하세요.
-- 만약 아직 설정이 되지 않은 것들을 빨리 사용하고 싶다면, `WaitingForPlayers` 이벤트를 기다리거나, 더 빨리, 최대한 빨리 사용하고 싶다면 코드를 `while(!x)` 안에 접근하고 싶은 것이 `null`이 아닌지 확인하는 코드와 함께 넣어주세요.
-- EXILED는 플러그인 어셈블리들을 서버 동작 중 동적으로 다시 불러올 수 있습니다. 플러그인을 업데이트하고 싶다면, 서버를 재시작할 필요가 없습니다. 하지만, 플러그인을 다시 불러온다면, 플러그인이 리로드를 지원하는지 확인하세요. 지원하지 않은 상태로 리로드를 시도하면, 아주, 매우, 안 좋은 시간을 보내게 될 겁니다. `동적 리로드` 문단을 읽어 보세요.
-- OnUpdate, OnFixedUpdate 이나 OnLateUpdate는 EXILED에 **_존재하지 않습니다_**. 코드를 그 정도로 많이 실행시키고 싶다면, MEC 코루틴을 사용하여 1 프레임, 0.01초 기다리는 코루틴을 사용하거나 Timing 레이어 (Timing.FixedUpdate 등) 를 사용하세요.
+-   당신의 플러그인은 **무조건** `Exiled.API.Features.Plugin<>`을 상속받는 클래스를 가지고 있어야 합니다. 없다면 EXILED 실행 시 플러그인이 작동되지 않습니다.
+-   플러그인이 실행되면, `OnEnabled()` 메서드가 **바로** 실행됩니다. 다른 플러그인이 불러와질 때까지 기다리지도 않고, 서버 시작 절차가 끝날 때가지 기다리지도 않습니다. **_아무것도 기다리지 않아요._** `OnEnabled()` 메소드을 구현할 때, 아직 설정이 되지 않은 것들, 예를 들어 `ServerConsole.Port`, 혹은 `PlayerManager.localPlayer` 을 사용하고 있지는 않은지 확인하세요.
+-   만약 아직 설정이 되지 않은 것들을 빨리 사용하고 싶다면, `WaitingForPlayers` 이벤트를 기다리거나, 더 빨리, 최대한 빨리 사용하고 싶다면 코드를 `while(!x)` 안에 접근하고 싶은 것이 `null`이 아닌지 확인하는 코드와 함께 넣어주세요.
+-   EXILED는 플러그인 어셈블리들을 서버 동작 중 동적으로 다시 불러올 수 있습니다. 플러그인을 업데이트하고 싶다면, 서버를 재시작할 필요가 없습니다. 하지만, 플러그인을 다시 불러온다면, 플러그인이 리로드를 지원하는지 확인하세요. 지원하지 않은 상태로 리로드를 시도하면, 아주, 매우, 안 좋은 시간을 보내게 될 겁니다. `동적 리로드` 문단을 읽어 보세요.
+-   OnUpdate, OnFixedUpdate 이나 OnLateUpdate는 EXILED에 **_존재하지 않습니다_**. 코드를 그 정도로 많이 실행시키고 싶다면, MEC 코루틴을 사용하여 1 프레임, 0.01초 기다리는 코루틴을 사용하거나 Timing 레이어 (Timing.FixedUpdate 등) 를 사용하세요.
 
 ### MEC 코루틴
 
@@ -142,15 +142,15 @@ EXILED는 플러그인 어셈블리를 서버를 재시작하지 않고도 동�
 
 **_서버 주인은_**
 
-- 플러그인을 업데이트하고 있다면, 플러그인의 어셈블리 이름이 현재와 다른지 확인하세요. 플러그인 개발자가 동적 리로딩을 염두에 두고 플러그인을 개발해야 했으며, 파일 이름을 바꾸는 것 만으로는 충분하지 않습니다.
-- 만약 플러그인이 동적 리로딩을 지원한다면, 새로운 플러그인을 "Plugins" 폴더에 넣을 때, 전에 있던 플러그인을 먼저 지워야 합니다. 그렇지 않으면, 안 좋은 일이 많이 일어날 수 있습니다.
-- 플러그인을 동적으로 리로딩하는데 생기는 모든 책임은 모두 플러그인 개발자 혹은 서버 주인에게 있습니다. EXILED가 동적 리로드를 지원하는데, 문제가 생기는 방법은 플러그인 개발자나 서버 주인이 무언가를 잘못하는 방법 밖에는 없습니다. EXILED 개발자들에게 동적 리로드로 버그를 신고하기 전에 둘 모두에게 모든 것이 제대로 동작되었는지 확인하세요.
+-   플러그인을 업데이트하고 있다면, 플러그인의 어셈블리 이름이 현재와 다른지 확인하세요. 플러그인 개발자가 동적 리로딩을 염두에 두고 플러그인을 개발해야 했으며, 파일 이름을 바꾸는 것 만으로는 충분하지 않습니다.
+-   만약 플러그인이 동적 리로딩을 지원한다면, 새로운 플러그인을 "Plugins" 폴더에 넣을 때, 전에 있던 플러그인을 먼저 지워야 합니다. 그렇지 않으면, 안 좋은 일이 많이 일어날 수 있습니다.
+-   플러그인을 동적으로 리로딩하는데 생기는 모든 책임은 모두 플러그인 개발자 혹은 서버 주인에게 있습니다. EXILED가 동적 리로드를 지원하는데, 문제가 생기는 방법은 플러그인 개발자나 서버 주인이 무언가를 잘못하는 방법 밖에는 없습니다. EXILED 개발자들에게 동적 리로드로 버그를 신고하기 전에 둘 모두에게 모든 것이 제대로 동작되었는지 확인하세요.
 
 **_개발자는_**
 
-- 동적 리로딩을 지원하는 플러그인을 만들 때, 플러그인이 걸려있던 모든 이벤트들을 비활성화되거나 리로딩 할 때 해제되어야 합니다.
-- Harmony 패치가 있는 플러그인이라면 Harmony 인스턴스를 만들 때 이름을 일종의 항상 바뀌는 변수로 만들어야 합니다. 또한 플러그인이 비활성화되거나 리로딩 될 때 Harmony 패치를 `UnPatchAll()` 메소드로 해제해야 합니다.
-- `OnEnabled()` 메소드에서 시작된 모든 코루틴들은 플러그인이 비활성화되거나 리로딩 될 때 중지되어야 합니다.
+-   동적 리로딩을 지원하는 플러그인을 만들 때, 플러그인이 걸려있던 모든 이벤트들을 비활성화되거나 리로딩 할 때 해제되어야 합니다.
+-   Harmony 패치가 있는 플러그인이라면 Harmony 인스턴스를 만들 때 이름을 일종의 항상 바뀌는 변수로 만들어야 합니다. 또한 플러그인이 비활성화되거나 리로딩 될 때 Harmony 패치를 `UnPatchAll()` 메소드로 해제해야 합니다.
+-   `OnEnabled()` 메소드에서 시작된 모든 코루틴들은 플러그인이 비활성화되거나 리로딩 될 때 중지되어야 합니다.
 
 위의 모든 것들은 `OnReloaded()` 또는 `OnDisabled()` 메소드에서 수행될 수 있습니다. EXILED가 플러그인을 리로드할 때, `OnDisabled()`가 호출되고 `OnReloaded()`가 호출됩니다. 그리고 새로운 어셈블리를 로드하고 `OnEnabled()`가 호출됩니다.
 
@@ -161,4 +161,3 @@ _새로운_ 어셈블리들이라는 것에 주목해주세요. 만약 똑같은
 
 모든 플러그인이 동적 리로딩을 지원하지 않아도 됩니다. 만약 동적 리로딩을 지원하지 않기로 생각했다면, 진짜 괜찮아요. :)
 플러그인의 어셈블리 버전을 바꾸는 것을 피하시고, 서버 주인분들에게 플러그인을 업데이트하기 위해 서버를 재시작하라고 요청하세요.
-    

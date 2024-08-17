@@ -19,18 +19,21 @@
     }
   ],
   "build": {
-     "globalMetadata": {
+    "globalMetadata": {
       "_appTitle": "EXILED",
       "_appLogoPath": "assets/exiled.png",
       "_appFaviconPath": "assets/favicon.ico",
       "_enableSearch": true,
       "_lang": "en",
       "_gitContribute": {
-        "repo": "https://github.com/Exiled-Official/EXILED",
+        "repo": "https://github.com/ExMod-Team/EXILED",
         "branch": "dev"
       }
     },
-    "template": ["default", "modern"],
+    "template": [
+      "default",
+      "modern"
+    ],
     "content": [
       {
         "files": [
