@@ -92,7 +92,7 @@ Niektóre pluginy mogą brać swoje configi z innych miejsc, wyżej wymieniona l
 
 # Dla programistów
 
-Tworzenie pluginów za pomocą EXILED'a jest całkiem proste. Jeżeli chcecie dowiedzieć się więcej na ten temat odwiedźcie naszą stronę [dla początkujących](https://github.com/galaxy119/EXILED/blob/master/GettingStarted.md).
+Tworzenie pluginów za pomocą EXILED'a jest całkiem proste. Jeżeli chcecie dowiedzieć się więcej na ten temat odwiedźcie naszą stronę [dla początkujących](https://github.com/ExMod-Team/EXILED/blob/master/.github/documentation/GettingStarted.md).
 
 Aby uzyskać dokładniejsze i bardziej aktualne poradniki odwiedźcie [stronę EXILED'a](https://exiled.to).
 

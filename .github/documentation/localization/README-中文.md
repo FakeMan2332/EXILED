@@ -87,7 +87,7 @@ EXILED 自身提供一些配置选项。
 
 # 致开发者
 
-制作一个 EXILED 的插件也是一件非常轻松的事情。如果你想要一个教程，请访问我们的[入门指南](https://github.com/galaxy119/EXILED/blob/master/GettingStarted.md).
+制作一个 EXILED 的插件也是一件非常轻松的事情。如果你想要一个教程，请访问我们的[入门指南](https://github.com/ExMod-Team/EXILED/blob/master/.github/documentation/GettingStarted.md).
 
 一个更加详细并且保持更新的教程，请见 [EXILED 官网](https://exmod-team.github.io/EXILED/articles/installation/index.html)。
 
