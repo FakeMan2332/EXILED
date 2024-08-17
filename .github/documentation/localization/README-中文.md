@@ -14,8 +14,8 @@
 EXILED 是一个用于 SCP: 秘密实验室服务器的高级插件框架。 它为开发者提供了一个可以改变游戏代码或实现其自己的功能的事件系统。
 所有的 EXILED 事件都基于 Harmony，意味着它不需要直接修改程序集来生效，使得其拥有两个独特的优点。
 
-- 首先， 所有框架内的代码都可以被发布和分享， 使得开发者可以更好的了解它是如何运作的， 以及提供增加或修改功能的建议。
-- 其次， 因为所有与框架相关的代码都是在服务器的程序集之外完成的，小的游戏更新对框架的影响会非常小。使得其更可能会与未来游戏更新兼容，以及在必要时更新时更加简单。
+-   首先， 所有框架内的代码都可以被发布和分享， 使得开发者可以更好的了解它是如何运作的， 以及提供增加或修改功能的建议。
+-   其次， 因为所有与框架相关的代码都是在服务器的程序集之外完成的，小的游戏更新对框架的影响会非常小。使得其更可能会与未来游戏更新兼容，以及在必要时更新时更加简单。
 
 # 安装方法
 
@@ -30,19 +30,19 @@ EXILED 的安装十分简单。因为是用 NW 插件 API 来将自身载入，�
 
 **备注**: 在运行安装包前请确保你所使用的用户有管理员权限。
 
-- 下载 **[Exiled.Installer-Win.exe](https://github.com/galaxy119/EXILED/releases)** (点击 Assets -> 下载安装包)
-- 放置到你的服务器文件夹 (如果你还没有下载服务端，则需要先在 Steam 中下载服务端)
-- 双击 **`Exiled.Installer.exe`** 或 **[install-prerelease.bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** 并放置到服务器文件夹中来安装最新的预更新
-- 获取以及安装插件，请参考下面的[安装插件](#installing-plugins)部分。
-  **备注:** 如果你正在一个远程服务器上安装 EXILED，请确保你运行的.exe 的用户和你运行 SCP:SL 服务器的一致
+-   下载 **[Exiled.Installer-Win.exe](https://github.com/galaxy119/EXILED/releases)** (点击 Assets -> 下载安装包)
+-   放置到你的服务器文件夹 (如果你还没有下载服务端，则需要先在 Steam 中下载服务端)
+-   双击 **`Exiled.Installer.exe`** 或 **[install-prerelease.bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** 并放置到服务器文件夹中来安装最新的预更新
+-   获取以及安装插件，请参考下面的[安装插件](#installing-plugins)部分。
+    **备注:** 如果你正在一个远程服务器上安装 EXILED，请确保你运行的.exe 的用户和你运行 SCP:SL 服务器的一致
 
 ### 手动安装
 
-- 下载 **[Exiled.tar.gz](https://github.com/galaxy119/EXILED/releases)**
-- 使用 [7Zip](https://www.7-zip.org/) 或 [WinRar](https://www.win-rar.com/download.html?&L=6) 解压里面的内容
-- 移动 **`EXILED`** 文件夹到 **`%appdata%`** （\*备注: 这个文件夹需要放在 `C:\用户\%UserName%\AppData\Roaming`， 而 **_不是_** `C:\用户\%UserName%\AppData\Roaming\SCP Secret Laboratory`， 而且它 **必须** 在 (...)\AppData\Roaming， 而不是 (...)\AppData\!\*）
-- 移动 **`SCP Secret Laboratory`** 文件夹到 **`%appdata%`** 中。
-- 按 Win + R 并输入 `%appdata%` 可快捷打开 AppData 文件夹。
+-   下载 **[Exiled.tar.gz](https://github.com/galaxy119/EXILED/releases)**
+-   使用 [7Zip](https://www.7-zip.org/) 或 [WinRar](https://www.win-rar.com/download.html?&L=6) 解压里面的内容
+-   移动 **`EXILED`** 文件夹到 **`%appdata%`** （\*备注: 这个文件夹需要放在 `C:\用户\%UserName%\AppData\Roaming`， 而 **_不是_** `C:\用户\%UserName%\AppData\Roaming\SCP Secret Laboratory`， 而且它 **必须** 在 (...)\AppData\Roaming， 而不是 (...)\AppData\!\*）
+-   移动 **`SCP Secret Laboratory`** 文件夹到 **`%appdata%`** 中。
+-   按 Win + R 并输入 `%appdata%` 可快捷打开 AppData 文件夹。
 
 # Linux
 
@@ -50,34 +50,34 @@ EXILED 的安装十分简单。因为是用 NW 插件 API 来将自身载入，�
 
 **备注:** 如果你正在一个远程服务器上安装 EXILED，请确保你运行的.exe 的用户和你运行 SCP:SL 服务器的一致
 
-- 下载 [Exiled.Installer-Linux](https://github.com/ExMod-Team/EXILED/releases) (点击 Assets -> 下载安装包)
-- 输入 **`./Exiled.Installer-Linux --path /path/to/server`** 来安装，或者是直接把它放到服务器文件夹里， 首先在控制台（终端）中使用 (`cd`)指令移动安装器，之后再输入: \*\*`./Exiled.Installer-Linux`运行安装程序。.
-- 如果你想要最新的预更新， 只需添加 **`--pre-releases`**. 例子: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
-- 另一个例子， 如果你把 `Exiled.Installer-Linux` 放到了你服务器的文件夹中，你还可以这样操作: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
-- 获取以及安装插件，请参考下面的[安装插件](#installing-plugins-1)部分。
+-   下载 [Exiled.Installer-Linux](https://github.com/ExMod-Team/EXILED/releases) (点击 Assets -> 下载安装包)
+-   输入 **`./Exiled.Installer-Linux --path /path/to/server`** 来安装，或者是直接把它放到服务器文件夹里， 首先在控制台（终端）中使用 (`cd`)指令移动安装器，之后再输入: \*\*`./Exiled.Installer-Linux`运行安装程序。.
+-   如果你想要最新的预更新， 只需添加 **`--pre-releases`**. 例子: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
+-   另一个例子， 如果你把 `Exiled.Installer-Linux` 放到了你服务器的文件夹中，你还可以这样操作: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
+-   获取以及安装插件，请参考下面的[安装插件](#installing-plugins-1)部分。
 
 ### 手动安装
 
-- 首先**确保**你登录的是用于运行 SCP 服务器的用户。
-- 下载 [Exiled.tar.gz](https://github.com/ExMod-Team/EXILED/releases) (SSH: 右键获取 `Exiled.tar.gz` 的链接， 然后输入: **`wget (下载链接)`**)
-- 解压到你目前的文件夹，输入 **`tar -xzvf EXILED.tar.gz`**
-- 移动 **`EXILED`** 文件夹到 **`~/.config`**中。 \*备注: EXILED 文件夹应该放到 `~/.config`， 而 **_不是_** `~/.config/SCP Secret Laboratory`\* (SSH 指令例子: **`mv EXILED ~/.config/`**)
-- 移动 **`SCP Secret Laboratory`** 文件到 **`~/.config`** (SSH 指令例子: **`mv SCP Secret Laboratory ~/.config/`**).
+-   首先**确保**你登录的是用于运行 SCP 服务器的用户。
+-   下载 [Exiled.tar.gz](https://github.com/ExMod-Team/EXILED/releases) (SSH: 右键获取 `Exiled.tar.gz` 的链接， 然后输入: **`wget (下载链接)`**)
+-   解压到你目前的文件夹，输入 **`tar -xzvf EXILED.tar.gz`**
+-   移动 **`EXILED`** 文件夹到 **`~/.config`**中。 \*备注: EXILED 文件夹应该放到 `~/.config`， 而 **_不是_** `~/.config/SCP Secret Laboratory`\* (SSH 指令例子: **`mv EXILED ~/.config/`**)
+-   移动 **`SCP Secret Laboratory`** 文件到 **`~/.config`** (SSH 指令例子: **`mv SCP Secret Laboratory ~/.config/`**).
 
 # 安装插件
 
 现在 EXILED 已经安装好了，并会在下次你启动你的服务器时随之启动。请注意 EXILED 本身基本不会做出任何事情，所以来 **[我们的 Discord 服务器](https://discord.gg/PyUkWTg)** 获取最新的插件吧。
 
-- 想要安装插件，只需要:
-  - 从[**插件仓库**的 Releases 页面](https://i.imgur.com/u34wgPD.jpg)中下载 DLL 文件。(**它必须是个`.dll`!**)
+-   想要安装插件，只需要:
+    -   从[**插件仓库**的 Releases 页面](https://i.imgur.com/u34wgPD.jpg)中下载 DLL 文件。(**它必须是个`.dll`!**)
 
 ## Windows
 
-- 移动 DLL 文件到: `C:\用户\%UserName%\AppData\Roaming\EXILED\Plugins` (可以通过按 Win + R 键输入`%appdata%` 来快速定位到 AppData)
+-   移动 DLL 文件到: `C:\用户\%UserName%\AppData\Roaming\EXILED\Plugins` (可以通过按 Win + R 键输入`%appdata%` 来快速定位到 AppData)
 
 ## Linux
 
-- 移动 DLL 文件到: `~/.config/EXILED/Plugins` (如果你的 SSH 用的是 root 用户，请搜索正确的`.config`文件夹，它会在 `/home/(SCP服务器用户)`下。)
+-   移动 DLL 文件到: `~/.config/EXILED/Plugins` (如果你的 SSH 用的是 root 用户，请搜索正确的`.config`文件夹，它会在 `/home/(SCP服务器用户)`下。)
 
 # 配置文件（Config）
 
@@ -87,17 +87,17 @@ EXILED 自身提供一些配置选项。
 
 # 致开发者
 
-制作一个 EXILED 的插件也是一件非常轻松的事情。如果你想要一个教程，请访问我们的[入门指南](https://github.com/ExMod-Team/EXILED/blob/master/.github/documentation/GettingStarted.md).
+制作一个 EXILED 的插件也是一件非常轻松的事情。如果你想要一个教程，请访问我们的[入门指南](https://github.com/galaxy119/EXILED/blob/master/GettingStarted.md).
 
 一个更加详细并且保持更新的教程，请见 [EXILED 官网](https://exmod-team.github.io/EXILED/articles/installation/index.html)。
 
 制作插件时应遵守以下规则：
 
-- 你的插件必须有一个类继承`Exiled.API.Features.Plugin<>`，如果没有， EXILED 将不会在服务器启动时载入你的插件。
-- 当一个插件载入后， `OnEnabled()` 方法中的代码将会在之前提到的类中会被首先调用， 它不会等待其他插件的加载，也不会等待服务器的启动完成。 **_它不会等待任何事物。_** 当你在设置你的 OnEnable()方法时，务必确保你没有在使用任何未初始化的事物，如`ServerConsole.Port`， `PlayerManager.localPlayer`。
-- 如果你需要使用任何可能未初始化的东西时，建议你等到`WaitingForPlayers`事件再使用，如果因为某些原因你需要在比这个事件还早之前需要执行一些东西，最好把代码放入一个` while(!x)` 循环来检查你所使用的变量不为 null。
-- EXILED 支持动态重新载入正在运行的插件程序集。也就是说，更新一个插件不需要重新启动服务器。但是，如果你要更新一个正在执行中的插件，插件本身需要支持这个功能，否则你将会非常不好过。 见 `动态更新` 部分以获取更多信息及规范。
-- EXILED**_没有_**`OnUpdate`，`OnFixedUpdate`或`OnLateUpdate`事件。如果由于某些原因你需要执行次数那么频繁的代码，你可以使用 MEC 协程来等待 1 帧，0.01 秒，或`Timing.FixedUpdate`来代替。
+-   你的插件必须有一个类继承`Exiled.API.Features.Plugin<>`，如果没有， EXILED 将不会在服务器启动时载入你的插件。
+-   当一个插件载入后， `OnEnabled()` 方法中的代码将会在之前提到的类中会被首先调用， 它不会等待其他插件的加载，也不会等待服务器的启动完成。 **_它不会等待任何事物。_** 当你在设置你的 OnEnable()方法时，务必确保你没有在使用任何未初始化的事物，如`ServerConsole.Port`， `PlayerManager.localPlayer`。
+-   如果你需要使用任何可能未初始化的东西时，建议你等到`WaitingForPlayers`事件再使用，如果因为某些原因你需要在比这个事件还早之前需要执行一些东西，最好把代码放入一个` while(!x)` 循环来检查你所使用的变量不为 null。
+-   EXILED 支持动态重新载入正在运行的插件程序集。也就是说，更新一个插件不需要重新启动服务器。但是，如果你要更新一个正在执行中的插件，插件本身需要支持这个功能，否则你将会非常不好过。 见 `动态更新` 部分以获取更多信息及规范。
+-   EXILED**_没有_**`OnUpdate`，`OnFixedUpdate`或`OnLateUpdate`事件。如果由于某些原因你需要执行次数那么频繁的代码，你可以使用 MEC 协程来等待 1 帧，0.01 秒，或`Timing.FixedUpdate`来代替。
 
 ### MEC 协程
 
@@ -138,15 +138,15 @@ EXILED 框架支持在不重启服务器的情况下动态重新载入插件程�
 
 **_致服主_**
 
-- 如果你想要更新一个插件， 请确保它的程序集名字和已经安装的版本（如有）的名字为不同的。 插件本身必须支持动态更新才能工作，只是重命名文件名则不会使其正常工作。
-- 如果一个插件支持动态更新，请务必确保你放置新版插件`Plugin`文件夹，以及你重新载入 EXILED 前移除了文件夹中旧版本的插件。否则，很多不好的事情会发生。
-- 任何由于动态更新插件所导致的问题是你与出现问题插件的作者的责任。 虽然 EXILED 完全支持并鼓励使用动态更新，但是它出现问题时，只可能是服主或者是插件开发者做了什么不该做的事情。 提交 Bug 给 EXILED 插件开发者最好提供关于动态更新前后的所有信息等，再三确认你们双方都没有弄错任何事情。
+-   如果你想要更新一个插件， 请确保它的程序集名字和已经安装的版本（如有）的名字为不同的。 插件本身必须支持动态更新才能工作，只是重命名文件名则不会使其正常工作。
+-   如果一个插件支持动态更新，请务必确保你放置新版插件`Plugin`文件夹，以及你重新载入 EXILED 前移除了文件夹中旧版本的插件。否则，很多不好的事情会发生。
+-   任何由于动态更新插件所导致的问题是你与出现问题插件的作者的责任。 虽然 EXILED 完全支持并鼓励使用动态更新，但是它出现问题时，只可能是服主或者是插件开发者做了什么不该做的事情。 提交 Bug 给 EXILED 插件开发者最好提供关于动态更新前后的所有信息等，再三确认你们双方都没有弄错任何事情。
 
 **_致开发者_**
 
-- 插件若想要支持动态更新，必须确保它在被关闭或重新载入时取消订阅所有之前订阅的事件。
-- 包含自制的 Harmony 补丁的插件必须使用某种形式的可变变量在 Harmony Instance 的名字里面，并且必须在插件被关闭或重新载入时`UnPatchAll()`。
-- 任何在`OnEnabled`方法中启动的协程都必须在插件被关闭或重载时结束。
+-   插件若想要支持动态更新，必须确保它在被关闭或重新载入时取消订阅所有之前订阅的事件。
+-   包含自制的 Harmony 补丁的插件必须使用某种形式的可变变量在 Harmony Instance 的名字里面，并且必须在插件被关闭或重新载入时`UnPatchAll()`。
+-   任何在`OnEnabled`方法中启动的协程都必须在插件被关闭或重载时结束。
 
 以上所提到的可以通过在`Plugin`类的`OnReloaded()`或`OnDisabled()`方法来实现。当 EXILED 重新加载插件时，它会先执行`OnDisabled()`，再是`OnReloaded()`， 然后才是加载新程序集以及执行`OnEnabled()`。
 

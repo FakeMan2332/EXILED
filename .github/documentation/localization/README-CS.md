@@ -14,8 +14,8 @@
 EXILED je vysokoúrovňové rozhraní pro pluginy na servery hry SCP: Secret Laboratory. Nabízí systém "eventů", tedy událostí, které mohou vývojáři využít k manipulaci nebo změně herního kódu či implementaci vlastních funkcí.
 Všechny EXILED eventy jsou kódovány pomocí Harmony, což znamená, že ke svému fungování nevyžadují přímé úpravy serverových sestav, což přináší dvě jedinečné výhody.
 
-- Zaprvé, celý kód rozhraní lze volně publikovat a sdílet, což vývojářům umožňuje lépe pochopit, _jak_ funguje, a navrhnout doplnění nebo změnu jeho funkcí.
-- Za druhé, protože veškerý kód související s rozhraním se provádí mimo sestavu serveru, budou mít věci jako malé aktualizace hry na rozhraní jen malý vliv, pokud vůbec nějaký. Díky tomu bude s největší pravděpodobností kompatibilní s budoucími aktualizacemi hry a také bude snazší jej aktualizovat, _když_ to bude nutné.
+-   Zaprvé, celý kód rozhraní lze volně publikovat a sdílet, což vývojářům umožňuje lépe pochopit, _jak_ funguje, a navrhnout doplnění nebo změnu jeho funkcí.
+-   Za druhé, protože veškerý kód související s rozhraním se provádí mimo sestavu serveru, budou mít věci jako malé aktualizace hry na rozhraní jen malý vliv, pokud vůbec nějaký. Díky tomu bude s největší pravděpodobností kompatibilní s budoucími aktualizacemi hry a také bude snazší jej aktualizovat, _když_ to bude nutné.
 
 # Instalace
 
@@ -29,30 +29,30 @@ Pokud se rozhodnete použít instalační program, postará se při správném s
 
 **Poznámka:**: Před spuštěním instalačního programu se ujistěte, že jste uživatelem, který provozuje server, nebo že máte oprávnění správce.
 
-- Stáhněte **`Exiled.Installer-Win.exe` [odsud](https://github.com/ExMod-Team/EXILED/releases)** (Klikněte na Assets -> klikněte na Instalátor)
-- Umístěte ji do složky serveru (pokud jste ji ještě nestáhli, stáhněte si dedikovaný server).
-- Dvakrát klikněte na **`Exiled.Installer.exe`** nebo **[stáhněte tento .bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** a umístěte jej do složky serveru, abyste nainstalovali nejnovější předběžnou verzi.
-- Chcete-li nainstalovat a získat pluginy, podívejte se na sekci Instalace pluginů níže.
-  **Poznámka:** Pokud instalujete EXILED na vzdálený server, ujistěte se, že spustíte .exe jako stejný uživatel, který spouští servery SCP:SL (nebo uživatel s právy správce).
+-   Stáhněte **`Exiled.Installer-Win.exe` [odsud](https://github.com/ExMod-Team/EXILED/releases)** (Klikněte na Assets -> klikněte na Instalátor)
+-   Umístěte ji do složky serveru (pokud jste ji ještě nestáhli, stáhněte si dedikovaný server).
+-   Dvakrát klikněte na **`Exiled.Installer.exe`** nebo **[stáhněte tento .bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** a umístěte jej do složky serveru, abyste nainstalovali nejnovější předběžnou verzi.
+-   Chcete-li nainstalovat a získat pluginy, podívejte se na sekci Instalace pluginů níže.
+    **Poznámka:** Pokud instalujete EXILED na vzdálený server, ujistěte se, že spustíte .exe jako stejný uživatel, který spouští servery SCP:SL (nebo uživatel s právy správce).
 
 ### Manuální instalace
 
-- Stáhněte si **`Exiled.tar.gz` [odsud](https://github.com/ExMod-Team/EXILED/releases)**
-- Extrahujte jeho obsah pomocí [7Zip](https://www.7-zip.org/) nebo [WinRar](https://www.win-rar.com/download.html?&L=6)
-- Přesuňte **`EXILED`** složku do **`%appdata%`** \*Poznámka: Tato složka musí jít do `C:\Users\%UserName%\AppData\Roaming`, a **_NE_** `C:\Users\%UserName%\AppData\Roaming\SCP Secret Laboratory`, a **MUSÍ** být v (...)\AppData\Roaming, ne (...)\AppData\!\*
-- Přesuňte **`SCP Secret Laboratory`** do **`%appdata%`**.
-  - Windows 10 & 11:
-    Napište `%appdata%` do Cortany / vyhledávání.
-  - Jakákoliv jiná verze:
-    Stiskněte Win + R a napište `%appdata%`
+-   Stáhněte si **`Exiled.tar.gz` [odsud](https://github.com/ExMod-Team/EXILED/releases)**
+-   Extrahujte jeho obsah pomocí [7Zip](https://www.7-zip.org/) nebo [WinRar](https://www.win-rar.com/download.html?&L=6)
+-   Přesuňte **`EXILED`** složku do **`%appdata%`** \*Poznámka: Tato složka musí jít do `C:\Users\%UserName%\AppData\Roaming`, a **_NE_** `C:\Users\%UserName%\AppData\Roaming\SCP Secret Laboratory`, a **MUSÍ** být v (...)\AppData\Roaming, ne (...)\AppData\!\*
+-   Přesuňte **`SCP Secret Laboratory`** do **`%appdata%`**.
+    -   Windows 10 & 11:
+        Napište `%appdata%` do Cortany / vyhledávání.
+    -   Jakákoliv jiná verze:
+        Stiskněte Win + R a napište `%appdata%`
 
 ### Instalace pluginů
 
 To je vše, EXILED by nyní měl být nainstalován a aktivní při příštím spuštění serveru. Pozor, EXILED sám o sobě neudělá téměř nic, takže se ujistěte, že si stáhnete nové pluginy z **[našeho serveru Discord](https://discord.gg/PyUkWTg)**.
 
-- Chcete-li nainstalovat plugin, jednoduše:
-  - Stáhněte si plugin z [_jeho_ stránky vydání](https://i.imgur.com/u34wgPD.jpg) (**MUSÍ být `.dll`!**)
-  - Přesuňte jej do: `C:\Users\%UserName%\AppData\Roaming\EXILED\Plugins` (dostaňte se sem stiskem Win + R, a pak psaním `%appdata%`)
+-   Chcete-li nainstalovat plugin, jednoduše:
+    -   Stáhněte si plugin z [_jeho_ stránky vydání](https://i.imgur.com/u34wgPD.jpg) (**MUSÍ být `.dll`!**)
+    -   Přesuňte jej do: `C:\Users\%UserName%\AppData\Roaming\EXILED\Plugins` (dostaňte se sem stiskem Win + R, a pak psaním `%appdata%`)
 
 # Linux
 
@@ -60,27 +60,27 @@ To je vše, EXILED by nyní měl být nainstalován a aktivní při příštím 
 
 **Poznámka:** Pokud instalujete EXILED na vzdálený server, ujistěte se, že jste instalátor spustili jako stejný uživatel, který spouští servery SCP:SL (nebo jako root).
 
-- Stáhněte **`Exiled.Installer-Win.exe` [odsud](https://github.com/ExMod-Team/EXILED/releases)** (Klikněte na Assets -> klikněte na Instalátor)
-- Nainstalujte jej pomocí **`./Exiled.Installer-Linux --path /cesta/k/serveru`** nebo ji přesuňte přímo do složky serveru, přejděte do ní pomocí terminálu (`cd`) a zadejte: **`./Exiled.Installer-Linux`**.
-- Pokud chcete nejnovější předběžnou verzi, stačí přidat **`--pre-releases`**. Příklad: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
-- Další příklad, pokud jste do složky serveru umístili soubor `Exiled.Installer-Linux`: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
-- Chcete-li nainstalovat a získat pluginy, podívejte se na sekci Instalace pluginů níže.
+-   Stáhněte **`Exiled.Installer-Win.exe` [odsud](https://github.com/ExMod-Team/EXILED/releases)** (Klikněte na Assets -> klikněte na Instalátor)
+-   Nainstalujte jej pomocí **`./Exiled.Installer-Linux --path /cesta/k/serveru`** nebo ji přesuňte přímo do složky serveru, přejděte do ní pomocí terminálu (`cd`) a zadejte: **`./Exiled.Installer-Linux`**.
+-   Pokud chcete nejnovější předběžnou verzi, stačí přidat **`--pre-releases`**. Příklad: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
+-   Další příklad, pokud jste do složky serveru umístili soubor `Exiled.Installer-Linux`: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
+-   Chcete-li nainstalovat a získat pluginy, podívejte se na sekci Instalace pluginů níže.
 
 ### Manuální instalace
 
-- **Ujistěte** se že jste přihlášeni jako uživatel, který spouští servery SCP: SL.
-- Stáhněte si **`Exiled.tar.gz` [odsud](https://github.com/ExMod-Team/EXILED/releases)** (SSH: klikněte pravým a zkopírujte `Exiled.tar.gz` odkaz, pak napište: **`wget (odkaz)`**)
-- Chcete-li jej rozbalit do aktuální složky, zadejte **`tar -xzvf EXILED.tar.gz`**
-- Přesuňte **`EXILED`** složku do **`~/.config`**. \*Poznámka: Tuto složku je třeba umístit do `~/.config`, a **_NE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv EXILED ~/.config/`**)
-- Přesuňte **`SCP Secret Laboratory`** složku do **`~/.config`**. \*Poznámka: Tuto složku je třeba umístit do `~/.config`, a **_NE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
+-   **Ujistěte** se že jste přihlášeni jako uživatel, který spouští servery SCP: SL.
+-   Stáhněte si **`Exiled.tar.gz` [odsud](https://github.com/ExMod-Team/EXILED/releases)** (SSH: klikněte pravým a zkopírujte `Exiled.tar.gz` odkaz, pak napište: **`wget (odkaz)`**)
+-   Chcete-li jej rozbalit do aktuální složky, zadejte **`tar -xzvf EXILED.tar.gz`**
+-   Přesuňte **`EXILED`** složku do **`~/.config`**. \*Poznámka: Tuto složku je třeba umístit do `~/.config`, a **_NE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv EXILED ~/.config/`**)
+-   Přesuňte **`SCP Secret Laboratory`** složku do **`~/.config`**. \*Poznámka: Tuto složku je třeba umístit do `~/.config`, a **_NE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
 
 ### Instalace pluginů
 
 To je vše, EXILED by nyní měl být nainstalován a aktivní při příštím spuštění serveru. Pozor, EXILED sám o sobě neudělá téměř nic, takže se ujistěte, že si stáhnete nové pluginy z **[našeho serveru Discord](https://discord.gg/PyUkWTg)**.
 
-- Chcete-li nainstalovat plugin, jednoduše:
-  - Stáhněte si plugin z [_jeho_ stránky vydání](https://i.imgur.com/u34wgPD.jpg) (**MUSÍ být `.dll`!**)
-  - Přesuňte jej do `~/.config/EXILED/Plugins` (pokud používáte SSH jako root, musíte najít správný `.config` který bude uvnitř `/home/(SCP Server Uživatel)`)
+-   Chcete-li nainstalovat plugin, jednoduše:
+    -   Stáhněte si plugin z [_jeho_ stránky vydání](https://i.imgur.com/u34wgPD.jpg) (**MUSÍ být `.dll`!**)
+    -   Přesuňte jej do `~/.config/EXILED/Plugins` (pokud používáte SSH jako root, musíte najít správný `.config` který bude uvnitř `/home/(SCP Server Uživatel)`)
 
 # Config
 
@@ -98,11 +98,11 @@ Obsáhlejší a aktivně aktualizované tutoriály naleznete na [webové stránc
 
 Při publikování pluginů však dbejte na dodržování těchto pravidel:
 
-- Váš plugin musí obsahovat třídu která dědí z `Exiled.API.Features.Plugin<>`, pokud tomu tak není, EXILED váš plugin při spuštění serveru nenačte.
-- Při načtení pluginu se kód v metodě `OnEnabled()` výše uvedené třídy spustí okamžitě, nečeká se na načtení ostatníchpluginů Nečeká na dokončení procesu spouštění serveru. **_Nečeká na nic._** Při nastavování metody `OnEnable()` dbejte na to, abyste nepřistupovali k věcem, které ještě nemusí být serverem inicializovány, jako je `ServerConsole.Port` nebo `PlayerManager.localPlayer`.
-- Pokud potřebujete přistupovat k věcem, které nejsou inicializovány před načtením pluginu, doporučujeme jednoduše počkat na event `WaitingForPlayers`, pokud z nějakého důvodu potřebujete provést věci dříve, zabalte kód do smyčky ` while(!x)`, která před pokračováním zkontroluje, zda proměnná/objekt, který potřebujete, již není null.
-- EXILED podporuje dynamické načítání sestav pluginů během spuštění. To znamená, že pokud potřebujete aktualizovat plugin, lze to provést bez restartu serveru, nicméně pokud aktualizujete zásuvný modul uprostřed provádění, musí být plugin správně nastaven tak, aby to podporoval, jinak budete mít velmi zlé časy. Další informace a pokyny, kterými je třeba se řídit, naleznete v části `Dynamické aktualizace`.
-- V rozhraní EXILED neexistuje žádná událost OnUpdate, OnFixedUpdate nebo OnLateUpdate. Pokud potřebujete z nějakého důvodu spouštět kód tak často, můžete místo toho použít koroutinu MEC, která čeká na jeden snímek, 0,01f, nebo použít vrstvu Timing, jako je Timing.FixedUpdate.
+-   Váš plugin musí obsahovat třídu která dědí z `Exiled.API.Features.Plugin<>`, pokud tomu tak není, EXILED váš plugin při spuštění serveru nenačte.
+-   Při načtení pluginu se kód v metodě `OnEnabled()` výše uvedené třídy spustí okamžitě, nečeká se na načtení ostatníchpluginů Nečeká na dokončení procesu spouštění serveru. **_Nečeká na nic._** Při nastavování metody `OnEnable()` dbejte na to, abyste nepřistupovali k věcem, které ještě nemusí být serverem inicializovány, jako je `ServerConsole.Port` nebo `PlayerManager.localPlayer`.
+-   Pokud potřebujete přistupovat k věcem, které nejsou inicializovány před načtením pluginu, doporučujeme jednoduše počkat na event `WaitingForPlayers`, pokud z nějakého důvodu potřebujete provést věci dříve, zabalte kód do smyčky ` while(!x)`, která před pokračováním zkontroluje, zda proměnná/objekt, který potřebujete, již není null.
+-   EXILED podporuje dynamické načítání sestav pluginů během spuštění. To znamená, že pokud potřebujete aktualizovat plugin, lze to provést bez restartu serveru, nicméně pokud aktualizujete zásuvný modul uprostřed provádění, musí být plugin správně nastaven tak, aby to podporoval, jinak budete mít velmi zlé časy. Další informace a pokyny, kterými je třeba se řídit, naleznete v části `Dynamické aktualizace`.
+-   V rozhraní EXILED neexistuje žádná událost OnUpdate, OnFixedUpdate nebo OnLateUpdate. Pokud potřebujete z nějakého důvodu spouštět kód tak často, můžete místo toho použít koroutinu MEC, která čeká na jeden snímek, 0,01f, nebo použít vrstvu Timing, jako je Timing.FixedUpdate.
 
 ### Zakázání záplat EXILED eventů
 
@@ -147,15 +147,15 @@ To také znamená, že můžete _aktualizovat_ pluginy, aniž byste museli plně
 
 **_Pro Uživatele_**
 
-- Pokud aktualizujete plugin, ujistěte se, že název jeho sestavy není stejný jako název aktuální nainstalované verze (pokud existuje). Aby to fungovalo, musí být plugin vytvořen vývojářem s ohledem na dynamické aktualizace, pouhé přejmenování souboru nefunguje. - If the plugin supports Dynamic Updates, be sure that when you put the newer version of the plugin into the "Plugins" folder, you also remove the older version from the folder, before reloading EXILED, failure to ensure this will result in many many bad things.
-- Za případné problémy, které vzniknou při dynamické aktualizaci pluginu, nesete odpovědnost výhradně vy a vývojář daného pluginu. Přestože EXILED plně podporuje a doporučuje dynamické aktualizace, jedinou možností, jak by mohly selhat nebo se pokazit, je, že by hostitel serveru nebo vývojář pluginu udělal něco špatně. Než vývojářům EXILED nahlásíte chybu týkající se dynamických aktualizací, třikrát zkontrolujte, zda obě tyto strany provedly vše správně.
+-   Pokud aktualizujete plugin, ujistěte se, že název jeho sestavy není stejný jako název aktuální nainstalované verze (pokud existuje). Aby to fungovalo, musí být plugin vytvořen vývojářem s ohledem na dynamické aktualizace, pouhé přejmenování souboru nefunguje. - If the plugin supports Dynamic Updates, be sure that when you put the newer version of the plugin into the "Plugins" folder, you also remove the older version from the folder, before reloading EXILED, failure to ensure this will result in many many bad things.
+-   Za případné problémy, které vzniknou při dynamické aktualizaci pluginu, nesete odpovědnost výhradně vy a vývojář daného pluginu. Přestože EXILED plně podporuje a doporučuje dynamické aktualizace, jedinou možností, jak by mohly selhat nebo se pokazit, je, že by hostitel serveru nebo vývojář pluginu udělal něco špatně. Než vývojářům EXILED nahlásíte chybu týkající se dynamických aktualizací, třikrát zkontrolujte, zda obě tyto strany provedly vše správně.
 
 **_Pro Vývojáře_**
 
-- Pluginy, které chtějí podporovat dynamickou aktualizaci, se musí ujistit, že se odhlásí ze všech eventů, ke kterým jsou připojeny, když jsou vypnuty nebo znovu načteny. - Plugins that have custom Harmony patches must use some kind of changing variable within the name of the Harmony Instance, and must UnPatchAll() on their harmony instance when the plugin is disabled or reloaded.
-- Všechny koroutiny spuštěné pluginem v `OnEnabled()` musí být také ukončeny, když je plugin vypnut nebo znovu načten.
+-   Pluginy, které chtějí podporovat dynamickou aktualizaci, se musí ujistit, že se odhlásí ze všech eventů, ke kterým jsou připojeny, když jsou vypnuty nebo znovu načteny. - Plugins that have custom Harmony patches must use some kind of changing variable within the name of the Harmony Instance, and must UnPatchAll() on their harmony instance when the plugin is disabled or reloaded.
+-   Všechny koroutiny spuštěné pluginem v `OnEnabled()` musí být také ukončeny, když je plugin vypnut nebo znovu načten.
 
-Toho všeho lze dosáhnout pomocí metod `OnReloaded()``` nebo `OnDisabled()`ve třídě pluginu. Když EXILED načítá pluginy, volá OnDisabled(), pak`OnReloaded()`, poté načte nové sestavy a pak provede `OnEnabled()``.
+Toho všeho lze dosáhnout pomocí metod ` OnReloaded()``` nebo  `OnDisabled()`ve třídě pluginu. Když EXILED načítá pluginy, volá OnDisabled(), pak`OnReloaded()`, poté načte nové sestavy a pak provede `OnEnabled()``.
 
 Všimněte si, že jsem řekl _nové_ sestavy. Pokud nahradíte sestavu jinou se stejným názvem, **_NEBUDE_** aktualizována. To je způsobeno GAC (Global Assembly Cache), pokud se pokusíte "načíst" sestavu, která je již v mezipaměti, vždy se místo ní použije sestava z mezipaměti.
 Pokud bude váš plugin podporovat dynamické aktualizace, musíte každou verzi sestavit s jiným názvem sestavení v možnostech sestavení (přejmenování souboru nebude fungovat). Navíc, protože stará sestava není "zničena", když už není potřeba, pokud se vám nepodaří odhlásit se z událostí, odepnout instanci harmony, zabít koroutiny atd., bude tento kód běžet dál stejně jako kód nové verze.

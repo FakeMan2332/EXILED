@@ -14,8 +14,8 @@
 EXILED er et plugin-framework på højt niveau til SCP: Secret Laboratory-servere. Det tilbyder et event-system, som udviklere kan bruge til at manipulere eller ændre spilkoden eller implementere deres egne funktioner.
 Alle EXILED-hændelser er kodet med Harmony, hvilket betyder, at de ikke kræver direkte redigering af server Assemblies for at fungere, hvilket giver to unikke fordele.
 
-- For det første kan hele frameworks-koden frit offentliggøres og deles, så udviklere bedre kan forstå, _hvordan_ det fungerer, og komme med forslag til at tilføje eller ændre dets funktioner.
-- For det andet, da al kode relateret til frameworket er lavet uden for serversamlingen, vil ting som små spilopdateringer have lille, hvis nogen, effekt på frameworket. Det gør det mere sandsynligt, at det er kompatibelt med fremtidige spilopdateringer, og gør det nemmere at opdatere, når det _er_ nødvendigt at gøre det.
+-   For det første kan hele frameworks-koden frit offentliggøres og deles, så udviklere bedre kan forstå, _hvordan_ det fungerer, og komme med forslag til at tilføje eller ændre dets funktioner.
+-   For det andet, da al kode relateret til frameworket er lavet uden for serversamlingen, vil ting som små spilopdateringer have lille, hvis nogen, effekt på frameworket. Det gør det mere sandsynligt, at det er kompatibelt med fremtidige spilopdateringer, og gør det nemmere at opdatere, når det _er_ nødvendigt at gøre det.
 
 # Installation
 
@@ -29,27 +29,27 @@ Hvis du vælger at bruge installationsprogrammet, vil det, hvis det køres korre
 
 **Note**: Sørg for, at du er på den bruger, der kører serveren, eller at du har administratorrettigheder, før du kører installationsprogrammet.
 
-- Download **`Exiled.Installer-Win.exe` [herfra](https://github.com/ExMod-Team/EXILED/releases)** (klik på Assets -> klik på Installer) - Placer den i din servermappe (download den dedikerede server, hvis du ikke har gjort det).
-- Dobbeltklik på **`Exiled.Installer.exe`** eller **[download denne .bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** og placer den i servermappen for at installere den seneste pre-release
-- For at installere og hente plugins, tjek afsnittet [Installing plugins](#installing-plugins) nedenfor.
-  **Bemærk:** Hvis du installerer EXILED på en fjernserver, skal du sørge for at køre .exe som den samme bruger, der kører dine SCP:SL-servere (eller en med administratorrettigheder).
+-   Download **`Exiled.Installer-Win.exe` [herfra](https://github.com/ExMod-Team/EXILED/releases)** (klik på Assets -> klik på Installer) - Placer den i din servermappe (download den dedikerede server, hvis du ikke har gjort det).
+-   Dobbeltklik på **`Exiled.Installer.exe`** eller **[download denne .bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** og placer den i servermappen for at installere den seneste pre-release
+-   For at installere og hente plugins, tjek afsnittet [Installing plugins](#installing-plugins) nedenfor.
+    **Bemærk:** Hvis du installerer EXILED på en fjernserver, skal du sørge for at køre .exe som den samme bruger, der kører dine SCP:SL-servere (eller en med administratorrettigheder).
 
 ### Manuel installation
 
-- Download **`Exiled.tar.gz` [herfra](https://github.com/ExMod-Team/EXILED/releases)**
-- Udpak indholdet med [7Zip](https://www.7-zip.org/) eller [WinRar](https://www.win-rar.com/download.html?&L=6)
-- Flyt mappen **`EXILED`** til **`%appdata%`** \*Bemærk: Denne mappe skal ligge i `C:\Users\%UserName%\AppData\Roaming`, og **_IKKE_** `C:\Users\%UserName%\AppData\Roaming\SCP Secret Laboratory`, og **Den SKAL** ligge i (...)\AppData\Roaming\SCP Secret Laboratory`. ..)\AppData\Roaming, ikke (...)\AppData\!*  - Flyt **`SCP Secret Laboratory``** til **`%appdata%`\*\*.
-  - Windows 10 og 11:
-    Skriv `%appdata%` i Cortana / søgeikonet eller Windows Explorer-linjen
-  - Alle andre Windows-versioner:
-    Tryk på Win + R og skriv `%appdata%`.
+-   Download **`Exiled.tar.gz` [herfra](https://github.com/ExMod-Team/EXILED/releases)**
+-   Udpak indholdet med [7Zip](https://www.7-zip.org/) eller [WinRar](https://www.win-rar.com/download.html?&L=6)
+-   Flyt mappen **`EXILED`** til **`%appdata%`** \*Bemærk: Denne mappe skal ligge i `C:\Users\%UserName%\AppData\Roaming`, og **_IKKE_** `C:\Users\%UserName%\AppData\Roaming\SCP Secret Laboratory`, og **Den SKAL** ligge i (...)\AppData\Roaming\SCP Secret Laboratory`. ..)\AppData\Roaming, ikke (...)\AppData\!*  - Flyt **`SCP Secret Laboratory``** til **`%appdata%`\*\*.
+    -   Windows 10 og 11:
+        Skriv `%appdata%` i Cortana / søgeikonet eller Windows Explorer-linjen
+    -   Alle andre Windows-versioner:
+        Tryk på Win + R og skriv `%appdata%`.
 
 ### Installation af plugins
 
 Det var det, EXILED skulle nu være installeret og aktiv, næste gang du starter din server op. Bemærk, at EXILED i sig selv næsten ikke gør noget, så sørg for at hente nye plugins fra **[vores Discord-server](https://discord.gg/PyUkWTg)**.
 
-- For at installere et plugin skal du blot:
-  - Download et plugin fra [_deres_ udgivelsesside](https://i.imgur.com/u34wgPD.jpg) (**det SKAL være en `.dll`!**) - Flyt det til: `C:\Users\(Your_User)\AppData\Roaming\EXILED\Plugins` (flyt den hertil ved at trykke Win + R, og skriv derefter `%appdata%`)
+-   For at installere et plugin skal du blot:
+    -   Download et plugin fra [_deres_ udgivelsesside](https://i.imgur.com/u34wgPD.jpg) (**det SKAL være en `.dll`!**) - Flyt det til: `C:\Users\(Your_User)\AppData\Roaming\EXILED\Plugins` (flyt den hertil ved at trykke Win + R, og skriv derefter `%appdata%`)
 
 # Linux
 
@@ -57,27 +57,27 @@ Det var det, EXILED skulle nu være installeret og aktiv, næste gang du starter
 
 **Bemærk:** Hvis du installerer EXILED på en fjernserver, skal du sørge for at køre installationsprogrammet som den samme bruger, der kører dine SCP:SL-servere (eller root).
 
-- Download **`Exiled.Installer-Linux` [herfra](https://github.com/ExMod-Team/EXILED/releases)** (klik på Assets -> download Installer)
-- Installer den ved enten at skrive **`./Exiled.Installer-Linux --path /path/to/server`** eller flyt den direkte ind i servermappen, gå til den med terminalen (`cd`) og skriv: **`./Exiled.Installer-Linux`**.
-- Hvis du vil have den seneste pre-release, skal du blot tilføje **`--pre-releases`**. Eksempel: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**.
-- Et andet eksempel, hvis du placerede `Exiled.Installer-Linux` i din servermappe: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
-- For at installere og hente plugins, se afsnittet [Installation af plugins](#installing-plugins-1) nedenfor.
+-   Download **`Exiled.Installer-Linux` [herfra](https://github.com/ExMod-Team/EXILED/releases)** (klik på Assets -> download Installer)
+-   Installer den ved enten at skrive **`./Exiled.Installer-Linux --path /path/to/server`** eller flyt den direkte ind i servermappen, gå til den med terminalen (`cd`) og skriv: **`./Exiled.Installer-Linux`**.
+-   Hvis du vil have den seneste pre-release, skal du blot tilføje **`--pre-releases`**. Eksempel: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**.
+-   Et andet eksempel, hvis du placerede `Exiled.Installer-Linux` i din servermappe: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
+-   For at installere og hente plugins, se afsnittet [Installation af plugins](#installing-plugins-1) nedenfor.
 
 ### Manuel installation
 
-- Sørg for, at du er logget ind på den bruger, der kører SCP-serverne.
-- Download **`Exiled.tar.gz` [herfra](https://github.com/ExMod-Team/EXILED/releases)** (SSH: højreklik og hent linket `Exiled.tar.gz`, skriv derefter: **`wget (link_til_download)`**)
-- For at udpakke den til din nuværende mappe, skriv **`tar -xzvf EXILED.tar.gz`**.
-- Flyt mappen **`EXILED`** til **`~/.config``**. \*Bemærk: Denne mappe skal ligge i `~/.config`, og **_IKKE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv EXILED ~/.config/`**)
-- Flyt mappen **`SCP Secret Laboratory`** til **`~/.config``**. \*Bemærk: Denne mappe skal være i `~/.config`, og **_IKKE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
+-   Sørg for, at du er logget ind på den bruger, der kører SCP-serverne.
+-   Download **`Exiled.tar.gz` [herfra](https://github.com/ExMod-Team/EXILED/releases)** (SSH: højreklik og hent linket `Exiled.tar.gz`, skriv derefter: **`wget (link_til_download)`**)
+-   For at udpakke den til din nuværende mappe, skriv **`tar -xzvf EXILED.tar.gz`**.
+-   Flyt mappen **`EXILED`** til **`~/.config``**. \*Bemærk: Denne mappe skal ligge i `~/.config`, og **_IKKE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv EXILED ~/.config/`**)
+-   Flyt mappen **`SCP Secret Laboratory`** til **`~/.config``**. \*Bemærk: Denne mappe skal være i `~/.config`, og **_IKKE_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
 
 ### Installation af plugins
 
 Det var det, EXILED skulle nu være installeret og aktiv, næste gang du starter din server op. Bemærk, at EXILED i sig selv næsten ikke gør noget, så sørg for at hente nye plugins fra **[vores Discord-server](https://discord.gg/PyUkWTg)**.
 
-- For at installere et plugin skal du blot:
-  - Download et plugin fra [_deres_ udgivelsesside](https://i.imgur.com/u34wgPD.jpg) (**det SKAL være en `.dll`!**)
-  - Flyt det til: `~/.config/EXILED/Plugins` (hvis du bruger din SSH som root, så søg efter den korrekte `.config`, som vil være inde i `/home/(SCP Server Bruger)`)
+-   For at installere et plugin skal du blot:
+    -   Download et plugin fra [_deres_ udgivelsesside](https://i.imgur.com/u34wgPD.jpg) (**det SKAL være en `.dll`!**)
+    -   Flyt det til: `~/.config/EXILED/Plugins` (hvis du bruger din SSH som root, så søg efter den korrekte `.config`, som vil være inde i `/home/(SCP Server Bruger)`)
 
 # Konfig
 
@@ -95,11 +95,11 @@ For mere omfattende og aktivt opdaterede vejledninger, se [EXILED-webstedet](htt
 
 Men sørg for at følge disse regler, når du udgiver dine plugins:
 
-- Dit plugin skal indeholde en klasse, der arver fra `Exiled.API.Features.Plugin<>`, hvis den ikke gør, vil EXILED ikke indlæse dit plugin, når serveren starter.
-- Når et plugin indlæses, udløses koden i den førnævnte klasses `OnEnabled()`-metode med det samme, den venter ikke på, at andre plugins bliver indlæst. Den venter ikke på, at serverens opstartsproces er færdig. \*\*\*Når du opsætter din `OnEnabled()`-metode, skal du være sikker på, at du ikke tilgår ting, som måske ikke er initialiseret af serveren endnu, såsom `ServerConsole.Port` eller `PlayerManager.localPlayer`.
-- Hvis du har brug for at tilgå ting tidligt, som ikke er initialiseret, før dit plugin er indlæst, anbefales det blot at vente på `WaitingForPlayers`-hændelsen for at gøre det, hvis du af en eller anden grund har brug for at gøre tingene hurtigere, skal du pakke koden ind i en `` while(!x)```-løkke, der kontrollerer, at den variabel/det objekt, du har brug for, ikke længere er null, før du fortsætter.
-- EXILED understøtter dynamisk genindlæsning af plugin-samlinger midt i udførelsen. Det betyder, at hvis du har brug for at opdatere et plugin, kan det gøres uden at genstarte serveren, men hvis du opdaterer et plugin midt i udførelsen, skal pluginnet være korrekt konfigureret til at understøtte det, ellers vil du få en meget dårlig tid. Se afsnittet `Dynamiske opdateringer` for flere oplysninger og retningslinjer, der skal følges.
-- Der er **_INGEN_** OnUpdate-, OnFixedUpdate- eller OnLateUpdate-begivenheder i EXILED. Hvis du af en eller anden grund har brug for at køre kode så ofte, kan du bruge en MEC coroutine, der venter på en frame, 0.01f, eller bruge et Timing-lag som Timing.FixedUpdate i stedet.
+-   Dit plugin skal indeholde en klasse, der arver fra `Exiled.API.Features.Plugin<>`, hvis den ikke gør, vil EXILED ikke indlæse dit plugin, når serveren starter.
+-   Når et plugin indlæses, udløses koden i den førnævnte klasses `OnEnabled()`-metode med det samme, den venter ikke på, at andre plugins bliver indlæst. Den venter ikke på, at serverens opstartsproces er færdig. \*\*\*Når du opsætter din `OnEnabled()`-metode, skal du være sikker på, at du ikke tilgår ting, som måske ikke er initialiseret af serveren endnu, såsom `ServerConsole.Port` eller `PlayerManager.localPlayer`.
+-   Hvis du har brug for at tilgå ting tidligt, som ikke er initialiseret, før dit plugin er indlæst, anbefales det blot at vente på `WaitingForPlayers`-hændelsen for at gøre det, hvis du af en eller anden grund har brug for at gøre tingene hurtigere, skal du pakke koden ind i en `` while(!x)```-løkke, der kontrollerer, at den variabel/det objekt, du har brug for, ikke længere er null, før du fortsætter.
+-   EXILED understøtter dynamisk genindlæsning af plugin-samlinger midt i udførelsen. Det betyder, at hvis du har brug for at opdatere et plugin, kan det gøres uden at genstarte serveren, men hvis du opdaterer et plugin midt i udførelsen, skal pluginnet være korrekt konfigureret til at understøtte det, ellers vil du få en meget dårlig tid. Se afsnittet `Dynamiske opdateringer` for flere oplysninger og retningslinjer, der skal følges.
+-   Der er **_INGEN_** OnUpdate-, OnFixedUpdate- eller OnLateUpdate-begivenheder i EXILED. Hvis du af en eller anden grund har brug for at køre kode så ofte, kan du bruge en MEC coroutine, der venter på en frame, 0.01f, eller bruge et Timing-lag som Timing.FixedUpdate i stedet.
 
 ### Deaktivering af EXILED Event-patches
 
@@ -144,15 +144,15 @@ Det betyder også, at du kan _opdatere_ plugins uden også at skulle genstarte s
 
 **_For server værter_**
 
-- Hvis du opdaterer et plugin, skal du sørge for, at dets samlingsnavn ikke er det samme som den aktuelle version, du har installeret (hvis nogen). Plugin'et skal være bygget af udvikleren med dynamiske opdateringer i tankerne, for at dette kan fungere, det er ikke nok at omdøbe filen.
-- Hvis pluginet understøtter dynamiske opdateringer, skal du sørge for, at når du lægger den nyere version af pluginet i mappen "Plugins", fjerner du også den ældre version fra mappen, før du genindlæser EXILED, hvis du ikke sørger for dette, vil det resultere i mange mange dårlige ting.
-- Eventuelle problemer, der opstår som følge af dynamisk opdatering af et plugin, er udelukkende dit og udvikleren af det pågældende plugins ansvar. Mens EXILED fuldt ud støtter og opfordrer til dynamiske opdateringer, er den eneste måde, det kan mislykkes eller gå galt på, hvis serverværten eller plugin-udvikleren gjorde noget forkert. Tjek tre gange, at alt blev gjort korrekt af begge parter, før du rapporterer en fejl til EXILEDs udviklere vedrørende dynamiske opdateringer.
+-   Hvis du opdaterer et plugin, skal du sørge for, at dets samlingsnavn ikke er det samme som den aktuelle version, du har installeret (hvis nogen). Plugin'et skal være bygget af udvikleren med dynamiske opdateringer i tankerne, for at dette kan fungere, det er ikke nok at omdøbe filen.
+-   Hvis pluginet understøtter dynamiske opdateringer, skal du sørge for, at når du lægger den nyere version af pluginet i mappen "Plugins", fjerner du også den ældre version fra mappen, før du genindlæser EXILED, hvis du ikke sørger for dette, vil det resultere i mange mange dårlige ting.
+-   Eventuelle problemer, der opstår som følge af dynamisk opdatering af et plugin, er udelukkende dit og udvikleren af det pågældende plugins ansvar. Mens EXILED fuldt ud støtter og opfordrer til dynamiske opdateringer, er den eneste måde, det kan mislykkes eller gå galt på, hvis serverværten eller plugin-udvikleren gjorde noget forkert. Tjek tre gange, at alt blev gjort korrekt af begge parter, før du rapporterer en fejl til EXILEDs udviklere vedrørende dynamiske opdateringer.
 
 **_For udviklere_**
 
-- Plugins, der ønsker at understøtte Dynamisk Updatering, skal sørge for at afmelde alle events, de er hooked til, når de deaktiveres eller genindlæses.
-- Plugins, der har tilpassede Harmony-patches, skal bruge en form for skiftende variabel i navnet på Harmony-instansen og skal `UnPatchAll()` på deres Harmony-instans, når pluginnet deaktiveres eller genindlæses.
-- Alle coroutines startet af plugin'et i `OnEnabled()` skal også dræbes, når plugin'et deaktiveres eller genindlæses.
+-   Plugins, der ønsker at understøtte Dynamisk Updatering, skal sørge for at afmelde alle events, de er hooked til, når de deaktiveres eller genindlæses.
+-   Plugins, der har tilpassede Harmony-patches, skal bruge en form for skiftende variabel i navnet på Harmony-instansen og skal `UnPatchAll()` på deres Harmony-instans, når pluginnet deaktiveres eller genindlæses.
+-   Alle coroutines startet af plugin'et i `OnEnabled()` skal også dræbes, når plugin'et deaktiveres eller genindlæses.
 
 Alt dette kan opnås i enten `OnReloaded()` eller `OnDisabled()` metoderne i plugin-klassen. Når EXILED genindlæser plugins, kalder den `OnDisabled()`, derefter `OnReloaded()`, så vil den indlæse de nye assemblies, og så udfører den `OnEnabled()`.
 
