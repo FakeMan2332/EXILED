@@ -4,12 +4,14 @@ title: Automatic Linux Installation
 
 # Automatic Linux Installation
 
-Download `Exiled.Installer-Linux` from [here](https://github.com/Exiled-Official/EXILED/releases).
+Download `Exiled.Installer-Linux` from [here](https://github.com/ExMod-Team/EXILED/releases).
 
 Move it into your **server directory** and run it using `./Exiled.Installer-Linux`
-- Make sure the server directory is the one where LocalAdmin executable is found.
+
+-   Make sure the server directory is the one where LocalAdmin executable is found.
 
 #### Usage
+
 ```
 Usage:
   Exiled.Installer [options] [[--] <additional arguments>...]]
@@ -29,11 +31,12 @@ Additional Arguments:
   Arguments passed to the application that is being run.
 ```
 
------
+---
 
 #### Examples
 
-- ##### Installation in a specific folder, specific version and specific appdata folder
+-   ##### Installation in a specific folder, specific version and specific appdata folder
+
 ```powershell title="Basic installation in the folder you are in"
 .\Exiled.Installer-Linux --pre-releases
 ```

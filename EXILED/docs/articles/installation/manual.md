@@ -8,7 +8,7 @@ You can download exiled manually following this steps:
 
 ### Pick a release
 
-You can select a release inside [our official GitHub repo](https://github.com/Exiled-Official/EXILED/releases/).
+You can select a release inside [our official GitHub repo](https://github.com/ExMod-Team/EXILED/releases/).
 
 ### Download the release
 
@@ -16,9 +16,10 @@ Download the `Exiled.tar.gz` file and extract it with your favourite tool, we re
 
 ### Installation
 
-1. Move the file **``Assembly-CSharp.dll``** to: **`(Your Server Folder)/SCPSL_Data/Managed`** and replace the file.
-2. Move the **``EXILED``** folder to **`%appdata%`**
+1. Move the file **`Assembly-CSharp.dll`** to: **`(Your Server Folder)/SCPSL_Data/Managed`** and replace the file.
+2. Move the **`EXILED`** folder to **`%appdata%`**
 
 #### Note:
-- Windows: This **`%appdata%`** folder is the one located inside **`AppData/Roaming`**, not just `AppData`.
-- Linux: This **`%appdata%`** folder is the one called **`~/.config`**.
+
+-   Windows: This **`%appdata%`** folder is the one located inside **`AppData/Roaming`**, not just `AppData`.
+-   Linux: This **`%appdata%`** folder is the one called **`~/.config`**.

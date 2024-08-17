@@ -4,12 +4,14 @@ title: Automatic Windows Installation
 
 # Automatic Windows Installation
 
-Download `Exiled.Installer-Win.exe` from [here](https://github.com/Exiled-Official/EXILED/releases).
+Download `Exiled.Installer-Win.exe` from [here](https://github.com/ExMod-Team/EXILED/releases).
 
 Move it into your **server directory** and double click the .exe.
-- Make sure the server directory is the one where LocalAdmin.exe is found.
+
+-   Make sure the server directory is the one where LocalAdmin.exe is found.
 
 #### Usage
+
 ```
 Usage:
   Exiled.Installer [options] [[--] <additional arguments>...]]
@@ -29,9 +31,10 @@ Additional Arguments:
   Arguments passed to the application that is being run.
 ```
 
------
+---
 
 #### Examples
+
 Using powershell.
 
 ```powershell title="Basic installation in the folder you are in"
