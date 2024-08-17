@@ -11,6 +11,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -24,9 +25,7 @@ Please include a pastebin of your localadmin log file (or both MA_log and SCP_lo
 
 **EXILED Version ("latest" is not a version):**
 
-
 **Results of `pluginmanager show` command in console:**
-
 
 **Additional context**
 Add any other context about the problem here.

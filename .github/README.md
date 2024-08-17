@@ -6,7 +6,7 @@
     <a href="https://discord.gg/PyUkWTg">Discord</a>
     for support.
   <p></p>
-</div> 
+</div>
 
 <div align="center">
 

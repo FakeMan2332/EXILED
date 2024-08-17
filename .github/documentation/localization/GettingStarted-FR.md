@@ -1,9 +1,12 @@
 # Exiled Documentation pour les bas niveau
-*(écrit par [KadeDev](https://github.com/KadeDev) pour la communautée)*
-*(traduit par [Crazy](https://github.com/CrazyMega02))*
+
+_(écrit par [KadeDev](https://github.com/KadeDev) pour la communautée)_
+_(traduit par [Crazy](https://github.com/CrazyMega02))_
 
 ## Savoir bien commencer
+
 ### Intro
+
 Exiled est une API de bas niveau, c'est à dire que vous pouvez faire appel à des fonction du jeux sans avoir besoin d'API de type bloatware (c'est à dire pré installé dans le jeux).
 
 Cela permet des mise à jour relativement facile d'Exiled et des mises à jour avant même que le jeux soit mise à jour lui-même.
@@ -13,10 +16,13 @@ Cela permet aussi au developpeurs de plugin à ne pas avoir à constament mettre
 Ce document ci-joint va vous apprendre les bases pour la création d'un plugin Exiled.D'ici là vous pouvez motrer au monde entier toute la créativitée que vous avez en vous et pourrez créé grace à ce-ci!
 
 ### Exemple de Plugin
+
 Un [Exemple de Plugin](https://github.com/galaxy119/EXILED/tree/master/Exiled.Example) qui est un simple plugin montrant les différents évenements et comment les mettre en place proprement. Cette exemple vous permettra d'apprende à utiliser correctement Exiled. Plusieurs choses sont important dans ce plugin, nous allons donc les voir.
 
 #### On Enable + On Disable Mise à jour Dynamique
-Exiled est un framework qui dispose d'une commande de **Rechargement** qui peut être utilisée pour recharger tous les plugins et en obtenir de nouveaux. Cela signifie que vous devez rendre vos plugins **Dynamiquement à jour.** Cela signifie que chaque variable, événement, coroutine, etc. *doit* être assigné lorsqu'il est activé et annulé lorsqu'il est désactivé. La méthode **On Enable** devrait tout activer, et la méthode **On Disable** devrait tout désactiver. Mais vous vous demandez peut-être ce qu'il en est de **On Reload**? Cette fonction est destinée à transférer les variables statiques, c'est-à-dire que toutes les constantes statiques que vous créez ne seront pas effacées. Vous pouvez donc faire quelque chose comme cela :
+
+Exiled est un framework qui dispose d'une commande de **Rechargement** qui peut être utilisée pour recharger tous les plugins et en obtenir de nouveaux. Cela signifie que vous devez rendre vos plugins **Dynamiquement à jour.** Cela signifie que chaque variable, événement, coroutine, etc. _doit_ être assigné lorsqu'il est activé et annulé lorsqu'il est désactivé. La méthode **On Enable** devrait tout activer, et la méthode **On Disable** devrait tout désactiver. Mais vous vous demandez peut-être ce qu'il en est de **On Reload**? Cette fonction est destinée à transférer les variables statiques, c'est-à-dire que toutes les constantes statiques que vous créez ne seront pas effacées. Vous pouvez donc faire quelque chose comme cela :
+
 ```csharp
 public static int StaticCount = 0;
 public int counter = 0;
@@ -41,6 +47,7 @@ public override void OnReload()
 ```
 
 Et le résultat serait :
+
 ```bash
 # On enable fires
 1
@@ -52,17 +59,21 @@ Et le résultat serait :
 3
 
 ```
+
 Bien sûr, excluant tout ce qui est autre que les réponses réelles. Sans cela, il serait simplement passé à 1 puis à 2 à nouveau.
 
 ### Joueurs + Events
+
 Maintenant que nous avons terminé de rendre nos plugins **Dynamiquement à jour**, nous pouvons nous concentrer sur la tentative d'interaction avec les joueurs grâce aux événements !
 
 Un événement est assez cool, il permet à SCP:SL de communiquer avec Exiled, puis à Exiled avec tous les plugins !
 
 Vous pouvez écouter les événements pour votre plugin en ajoutant ceci en haut de votre fichier source principal du plugin :
+
 ```csharp
 using EXILED;
 ```
+
 Ensuite, vous devez référencer le fichier `Exiled.Events.dll` pour réellement obtenir des événements.
 
 Pour référencer un événement, nous utiliserons une nouvelle classe que nous créons ; appelée "EventHandlers". Le gestionnaire d'événements n'est pas fourni par défaut ; vous devez le créer.
@@ -70,6 +81,7 @@ Pour référencer un événement, nous utiliserons une nouvelle classe que nous 
 Nous pouvons le référencer dans les méthodes OnEnable et OnDisable de la manière suivante :
 
 `MainClass.cs`
+
 ```csharp
 using Player = Exiled.Events.Handlers.Player;
 
@@ -104,6 +116,7 @@ public class EventHandlers
     }
 }
 ```
+
 Maintenant, nous nous sommes correctement connectés à un événement de joueur vérifié qui se déclenche chaque fois qu'un joueur est authentifié après avoir rejoint le serveur ! Il est important de noter que chaque événement a des arguments d'événement différents, et chaque type d'argument d'événement a des propriétés différentes qui lui sont associées.
 
 EXILED fournit déjà une fonction de diffusion, alors utilisons-la dans notre événement :
@@ -121,6 +134,7 @@ public class EventHandlers
 Comme indiqué ci-dessus, chaque événement a des arguments différents. Ci-dessous se trouve un événement différent qui désactive les portes Tesla pour les joueurs Nine-Tailed Fox.
 
 `MainClass.cs`
+
 ```csharp
 using Player = Exiled.Events.Handlers.Player;
 
@@ -143,6 +157,7 @@ public override OnDisable()
 Et dans la classe EventHandlers.
 
 `EventHandlers.cs`
+
 ```csharp
 public class EventHandlers
 {
@@ -159,8 +174,8 @@ public class EventHandlers
 }
 ```
 
-
 ### Configs
+
 La majorité des plugins Exiled contiennent des configurations. Les configurations permettent aux administrateurs de serveur de modifier les plugins selon leurs besoins, bien que cela soit limité à la configuration fournie par le développeur du plugin.
 
 Commencez par créer une classe `config.cs`, et changez l'héritage de votre plugin de `Plugin<>` à `Plugin<Config>`.
@@ -178,6 +193,7 @@ Maintenant, vous devez faire en sorte que cette configuration hérite de `IConfi
 Vous pouvez ajouter n'importe quelle option de configuration là-dedans et y faire référence comme ceci :
 
 `Config.cs`
+
 ```csharp
     public class Config : IConfig
     {
@@ -188,6 +204,7 @@ Vous pouvez ajouter n'importe quelle option de configuration là-dedans et y fai
 ```
 
 `MainClass.cs`
+
 ```csharp
    public override OnEnabled()
    {
@@ -198,6 +215,7 @@ Vous pouvez ajouter n'importe quelle option de configuration là-dedans et y fai
 Et félicitations ! Vous avez créé votre tout premier plugin Exiled ! Il est important de noter que tous les plugins **doivent** avoir une configuration IsEnabled. Cette configuration permet aux propriétaires de serveurs d'activer et de désactiver le plugin à leur guise. La configuration IsEnabled sera lue par le chargeur Exiled (votre plugin n'a pas besoin de vérifier si `IsEnabled == true` ou non).
 
 ### Que faire Maintenant ?
+
 Si vous voulez plus d'informations, vous devriez rejoindre notre [discord!](https://discord.gg/PyUkWTg)
 
 Nous avons un canal #resources que vous pourriez trouver utile, ainsi que des contributeurs Exiled et des développeurs de plugins qui seraient prêts à vous aider dans la création de votre/vos plugin(s).
