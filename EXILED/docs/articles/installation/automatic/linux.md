@@ -8,7 +8,7 @@ Download `Exiled.Installer-Linux` from [here](https://github.com/ExMod-Team/EXIL
 
 Move it into your **server directory** and run it using `./Exiled.Installer-Linux`
 
--   Make sure the server directory is the one where LocalAdmin executable is found.
+-   Mke sure the server directory is the one where LocalAdmin executable is found.
 
 #### Usage
 
