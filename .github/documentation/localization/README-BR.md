@@ -14,8 +14,8 @@
 O EXILED é uma estrutura para plug-ins de alto nível aos servidores de SCP: Secret Laboratory. Ele oferece um sistema de eventos para os desenvolvedores usarem com o intuito de manipular, alterar o código do jogo ou implementar suas próprias funções.
 Todos os eventos do EXILED são codificados com Harmony, o que significa que não requerem edição direta dos Assemblies do servidor para funcionar, o que permite dois benefícios exclusivos.
 
--   Em primeiro lugar, todo o código da estrutura pode ser publicado e compartilhado livremente, permitindo que os desenvolvedores entendam melhor _como_ ele funciona, além de oferecer sugestões para adicionar ou alterar suas funções.
--   Em segundo lugar, como todo o código relacionado à estrutura é feito fora da Assembly do servidor, coisas como pequenas atualizações do jogo terão pouco ou nenhum efeito na framework, tornando-a mais compatível com futuras atualizações do jogo, além de facilitar a atualização quando _for_ necessário fazê-la.
+- Em primeiro lugar, todo o código da estrutura pode ser publicado e compartilhado livremente, permitindo que os desenvolvedores entendam melhor _como_ ele funciona, além de oferecer sugestões para adicionar ou alterar suas funções.
+- Em segundo lugar, como todo o código relacionado à estrutura é feito fora da Assembly do servidor, coisas como pequenas atualizações do jogo terão pouco ou nenhum efeito na framework, tornando-a mais compatível com futuras atualizações do jogo, além de facilitar a atualização quando _for_ necessário fazê-la.
 
 # Instalação
 
@@ -29,30 +29,30 @@ Se você optar por usar o instalador, se executado corretamente, ele cuidará de
 
 **Nota**: Verifique se você está conectado ao usuário que executa o servidor ou se possui privilégios de administrador antes de executar o Instalador.
 
--   Baixe o **`Exiled.Installer-Win.exe` [daqui](https://github.com/ExMod-Team/EXILED/releases)** (clique em Assets -> clique no Instalador)
--   Coloque-o na pasta do seu servidor (baixe o servidor dedicado, caso não o tenha feito)
--   Clique duas vezes em **`Exiled.Installer.exe`** ou **[baixe este .bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** e coloque-o na pasta do servidor para instalar o pré-lançamento mais recente
--   Para instalar e obter plug-ins, confira a seção [Instalando plug-ins](#installing-plugins) abaixo.
-    **Nota:** Se você estiver instalando o EXILED em um servidor remoto, certifique-se de executar o .exe como o mesmo usuário que executa seus servidores de SCP:SL (ou um com privilégios de administrador)
+- Baixe o **`Exiled.Installer-Win.exe` [daqui](https://github.com/ExMod-Team/EXILED/releases)** (clique em Assets -> clique no Instalador)
+- Coloque-o na pasta do seu servidor (baixe o servidor dedicado, caso não o tenha feito)
+- Clique duas vezes em **`Exiled.Installer.exe`** ou **[baixe este .bat](https://www.dropbox.com/s/xny4xus73ze6mq9/install-prerelease.bat?dl=1)** e coloque-o na pasta do servidor para instalar o pré-lançamento mais recente
+- Para instalar e obter plug-ins, confira a seção [Instalando plug-ins](#installing-plugins) abaixo.
+  **Nota:** Se você estiver instalando o EXILED em um servidor remoto, certifique-se de executar o .exe como o mesmo usuário que executa seus servidores de SCP:SL (ou um com privilégios de administrador)
 
 ### Instalação manual
 
--   Baixe o **`Exiled.tar.gz` [daqui](https://github.com/ExMod-Team/EXILED/releases)**
--   Extraia seus conteúdos com [7Zip](https://www.7-zip.org/) ou [WinRar](https://www.win-rar.com/download.html?&L=6)
--   Mova a pasta **`EXILED`** para **`%appdata%`** \*Note: Esta pasta precisa ir ao diretório `C:\Users\%NomeDoUsuário%\AppData\Roaming`, e **_NÃO_** ao `C:\Users\%NomeDoUsuário%\AppData\Roaming\SCP Secret Laboratory`, e **DEVE** estar em (...)\AppData\Roaming, não (...)\AppData\!\*
--   Mova **`SCP Secret Laboratory`** para **`%appdata%`**.
-    -   Windows 10 e 11:
-        Escreva `%appdata%` na Cortana / no ícone de pesquisa ou na barra do Windows Explorer
-    -   Qualquer outra versão do Windows:
-        Pressione Win + R e digite `%appdata%`
+- Baixe o **`Exiled.tar.gz` [daqui](https://github.com/ExMod-Team/EXILED/releases)**
+- Extraia seus conteúdos com [7Zip](https://www.7-zip.org/) ou [WinRar](https://www.win-rar.com/download.html?&L=6)
+- Mova a pasta **`EXILED`** para **`%appdata%`** \*Note: Esta pasta precisa ir ao diretório `C:\Users\%NomeDoUsuário%\AppData\Roaming`, e **_NÃO_** ao `C:\Users\%NomeDoUsuário%\AppData\Roaming\SCP Secret Laboratory`, e **DEVE** estar em (...)\AppData\Roaming, não (...)\AppData\!\*
+- Mova **`SCP Secret Laboratory`** para **`%appdata%`**.
+  - Windows 10 e 11:
+    Escreva `%appdata%` na Cortana / no ícone de pesquisa ou na barra do Windows Explorer
+  - Qualquer outra versão do Windows:
+    Pressione Win + R e digite `%appdata%`
 
 ### Instalando plug-ins
 
 É isso, o EXILED agora deve estar instalado e ativo na próxima vez que você inicializar seu servidor. Observe que o EXILED sozinho não fará quase nada, portanto, certifique-se de obter novos plug-ins no **[nosso servidor do Discord](https://discord.gg/PyUkWTg)**
 
--   Para instalar um plug-in, basta:
-    -   Baixar um plug-in da [página de lançamentos _deles_](https://i.imgur.com/u34wgPD.jpg) (**DEVE ser um `.dll`!**)
-    -   Mova-o para: `C:\Users\%NomeDoUsuário%\AppData\Roaming\EXILED\Plugins` (mova-se para cá pressionando Win + R e, em seguida, escrevendo `%appdata%`)
+- Para instalar um plug-in, basta:
+  - Baixar um plug-in da [página de lançamentos _deles_](https://i.imgur.com/u34wgPD.jpg) (**DEVE ser um `.dll`!**)
+  - Mova-o para: `C:\Users\%NomeDoUsuário%\AppData\Roaming\EXILED\Plugins` (mova-se para cá pressionando Win + R e, em seguida, escrevendo `%appdata%`)
 
 # Linux
 
@@ -60,27 +60,27 @@ Se você optar por usar o instalador, se executado corretamente, ele cuidará de
 
 **Nota:** Se você estiver instalando o EXILED em um servidor remoto, certifique-se de executar o instalador como o mesmo usuário que executa seus servidores de SCP:SL (ou root)
 
--   Baixe o **`Exiled.Installer-Linux` [daqui](https://github.com/ExMod-Team/EXILED/releases)** (clique em Assets -> baixe o Instalador)
--   Instale-o digitando **`./Exiled.Installer-Linux --path /path/to/server`** ou mova-o diretamente para dentro da pasta do servidor, mova para ele com o terminal(`cd`) e digite: **`./Exiled.Installer-Linux`**.
--   Se você quiser o último pré-lançamento, simplesmente adicione **`--pre-releases`**. Exemplo: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
--   Outro exemplo, se você colocou `Exiled.Installer-Linux` na pasta do seu servidor: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
--   Para instalar e obter plug-ins, confira a seção [Instalando plug-ins](#installing-plugins-1) abaixo.
+- Baixe o **`Exiled.Installer-Linux` [daqui](https://github.com/ExMod-Team/EXILED/releases)** (clique em Assets -> baixe o Instalador)
+- Instale-o digitando **`./Exiled.Installer-Linux --path /path/to/server`** ou mova-o diretamente para dentro da pasta do servidor, mova para ele com o terminal(`cd`) e digite: **`./Exiled.Installer-Linux`**.
+- Se você quiser o último pré-lançamento, simplesmente adicione **`--pre-releases`**. Exemplo: **`./Exiled.Installer-Linux /home/scp/server --pre-releases`**
+- Outro exemplo, se você colocou `Exiled.Installer-Linux` na pasta do seu servidor: **`/home/scp/server/Exiled.Installer-Linux --pre-releases`**
+- Para instalar e obter plug-ins, confira a seção [Instalando plug-ins](#installing-plugins-1) abaixo.
 
 ### Instalação manual
 
--   **Tenha certeza** de que você está conectado ao usuário que executa os servidores de SCP.
--   Baixe o **`Exiled.tar.gz` [daqui](https://github.com/ExMod-Team/EXILED/releases)** (SSH: clique com o botão direito do mouse para receber o link do `Exiled.tar.gz` e então digite: **`wget (link_para_baixar)`**)
--   Para extraí-lo à sua pasta atual, digite **`tar -xzvf EXILED.tar.gz`**
--   Mova a pasta **`EXILED`** para **`~/.config`**. \*Nota: Esta pasta precisa ir ao diretório `~/.config`, e **_NÃO_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv EXILED ~/.config/`**)
--   Mova a pasta **`SCP Secret Laboratory`** para **`~/.config`**. \*Nota: Esta pasta precisa ir ao diretório `~/.config`, e **_NÃO_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
+- **Tenha certeza** de que você está conectado ao usuário que executa os servidores de SCP.
+- Baixe o **`Exiled.tar.gz` [daqui](https://github.com/ExMod-Team/EXILED/releases)** (SSH: clique com o botão direito do mouse para receber o link do `Exiled.tar.gz` e então digite: **`wget (link_para_baixar)`**)
+- Para extraí-lo à sua pasta atual, digite **`tar -xzvf EXILED.tar.gz`**
+- Mova a pasta **`EXILED`** para **`~/.config`**. \*Nota: Esta pasta precisa ir ao diretório `~/.config`, e **_NÃO_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv EXILED ~/.config/`**)
+- Mova a pasta **`SCP Secret Laboratory`** para **`~/.config`**. \*Nota: Esta pasta precisa ir ao diretório `~/.config`, e **_NÃO_** `~/.config/SCP Secret Laboratory`\* (SSH: **`mv SCP Secret Laboratory ~/.config/`**)
 
 ### Instalando plug-ins
 
 É isso, o EXILED agora deve estar instalado e ativo na próxima vez que você inicializar seu servidor. Observe que o EXILED sozinho não fará quase nada, portanto, certifique-se de obter novos plug-ins no **[nosso servidor do Discord](https://discord.gg/PyUkWTg)**
 
--   Para instalar um plug-in, basta:
-    -   Baixar um plug-in da [página de lançamento _deles_](https://i.imgur.com/u34wgPD.jpg) (**DEVE ser um `.dll`!**)
-    -   Mova-o para: `~/.config/EXILED/Plugins` (se você utiliza SSH como root, então procure pela `.config` correta, que estará dentro de `/home/(Usuário do Servidor de SCP)`)
+- Para instalar um plug-in, basta:
+  - Baixar um plug-in da [página de lançamento _deles_](https://i.imgur.com/u34wgPD.jpg) (**DEVE ser um `.dll`!**)
+  - Mova-o para: `~/.config/EXILED/Plugins` (se você utiliza SSH como root, então procure pela `.config` correta, que estará dentro de `/home/(Usuário do Servidor de SCP)`)
 
 # Configuração
 
@@ -98,11 +98,11 @@ Para tutoriais mais abrangentes e ativamente atualizados, consulte [o site da EX
 
 Mas certifique-se de seguir estas regras ao publicar seus plug-ins:
 
--   Seu plug-in deve conter uma classe herdada de `Exiled.API.Features.Plugin<>`, caso contrário, o EXILED não carregará seu plug-in quando o servidor iniciar.
--   Quando um plug-in é carregado, o código dentro do método `OnEnabled()` da classe supracitada é acionado imediatamente, ele não espera que outros plug-ins sejam carregados. Ele não espera a conclusão do processo de inicialização do servidor. **_Ele não espera por nada._** Ao configurar seu método `OnEnable()`, certifique-se de não estar acessando coisas que ainda não foram inicializadas pelo servidor, como `ServerConsole.Port`, ou `PlayerManager.localPlayer`.
--   Se você precisar acessar coisas que não foram inicializadas antes do carregamento do plug-in, é recomendável simplesmente aguardar o evento `WaitingForPlayers` para fazê-lo, se por algum motivo precisar fazer as coisas antes, envolva o código em um loop ` while(!x)` que verifica se a variável/objeto que você precisa não é mais _null_ antes de continuar.
--   O EXILED suporta o recarregamento dinâmico de Assemblies de plug-ins no meio da execução. Isso significa que, se você precisar atualizar um plug-in, isso pode ser feito sem reiniciar o servidor, no entanto, se você estiver atualizando um plug-in no meio da execução, o plug-in precisa ser configurado corretamente para suportá-lo, ou você terá um sério problema. Consulte a seção `Atualizações Dinâmicas` para mais informações e orientações a seguir.
--   **NÃO** há evento OnUpdate, OnFixedUpdate ou OnLateUpdate no EXILED. Se você precisar, por algum motivo, executar o código com frequência, poderá usar uma corrotina MEC que espera por um quadro, 0.01f, ou usar uma camada de Timing como Timing.FixedUpdate.
+- Seu plug-in deve conter uma classe herdada de `Exiled.API.Features.Plugin<>`, caso contrário, o EXILED não carregará seu plug-in quando o servidor iniciar.
+- Quando um plug-in é carregado, o código dentro do método `OnEnabled()` da classe supracitada é acionado imediatamente, ele não espera que outros plug-ins sejam carregados. Ele não espera a conclusão do processo de inicialização do servidor. **_Ele não espera por nada._** Ao configurar seu método `OnEnable()`, certifique-se de não estar acessando coisas que ainda não foram inicializadas pelo servidor, como `ServerConsole.Port`, ou `PlayerManager.localPlayer`.
+- Se você precisar acessar coisas que não foram inicializadas antes do carregamento do plug-in, é recomendável simplesmente aguardar o evento `WaitingForPlayers` para fazê-lo, se por algum motivo precisar fazer as coisas antes, envolva o código em um loop ` while(!x)` que verifica se a variável/objeto que você precisa não é mais _null_ antes de continuar.
+- O EXILED suporta o recarregamento dinâmico de Assemblies de plug-ins no meio da execução. Isso significa que, se você precisar atualizar um plug-in, isso pode ser feito sem reiniciar o servidor, no entanto, se você estiver atualizando um plug-in no meio da execução, o plug-in precisa ser configurado corretamente para suportá-lo, ou você terá um sério problema. Consulte a seção `Atualizações Dinâmicas` para mais informações e orientações a seguir.
+- **NÃO** há evento OnUpdate, OnFixedUpdate ou OnLateUpdate no EXILED. Se você precisar, por algum motivo, executar o código com frequência, poderá usar uma corrotina MEC que espera por um quadro, 0.01f, ou usar uma camada de Timing como Timing.FixedUpdate.
 
 ### Desativando patches de evento do EXILED
 
@@ -147,15 +147,15 @@ Isso também significa que você pode _atualizar_ os plug-ins sem precisar reini
 
 **_Para Hosters_**
 
--   Se você estiver atualizando um plug-in, certifique-se de que o nome do Assembly não seja o mesmo da versão atual que você instalou (se houver uma). O plug-in deve ser construído pelo desenvolvedor com atualizações dinâmicas em mente para que isso funcione, simplesmente renomear o arquivo não basta.
--   Se o plug-in suporta Atualizações Dinâmicas, certifique-se de que, ao colocar a versão mais recente do plug-in na pasta "Plugins", você também remova a versão mais antiga da pasta, antes de recarregar o EXILED; a falha em garantir isso resultará em muitos problemas indesejados.
--   Quaisquer problemas decorrentes da Atualização Dinâmica de um plug-in são de sua exclusiva responsabilidade e do desenvolvedor do plug-in em questão. Embora o EXILED suporte e incentive totalmente as Atualizações Dinâmicas, a única maneira de isso falhar ou dar errado é se o anfitrião do servidor ou o desenvolvedor do plug-in fizer algo errado. Verifique três vezes se tudo foi feito corretamente por ambas as partes antes de relatar um erro aos desenvolvedores da EXILED em relação às Atualizações Dinâmicas.
+- Se você estiver atualizando um plug-in, certifique-se de que o nome do Assembly não seja o mesmo da versão atual que você instalou (se houver uma). O plug-in deve ser construído pelo desenvolvedor com atualizações dinâmicas em mente para que isso funcione, simplesmente renomear o arquivo não basta.
+- Se o plug-in suporta Atualizações Dinâmicas, certifique-se de que, ao colocar a versão mais recente do plug-in na pasta "Plugins", você também remova a versão mais antiga da pasta, antes de recarregar o EXILED; a falha em garantir isso resultará em muitos problemas indesejados.
+- Quaisquer problemas decorrentes da Atualização Dinâmica de um plug-in são de sua exclusiva responsabilidade e do desenvolvedor do plug-in em questão. Embora o EXILED suporte e incentive totalmente as Atualizações Dinâmicas, a única maneira de isso falhar ou dar errado é se o anfitrião do servidor ou o desenvolvedor do plug-in fizer algo errado. Verifique três vezes se tudo foi feito corretamente por ambas as partes antes de relatar um erro aos desenvolvedores da EXILED em relação às Atualizações Dinâmicas.
 
 **_Para Desenvolvedores_**
 
--   Os plug-ins que desejam oferecer suporte à Atualização Dinâmica precisam cancelar a assinatura de todos os eventos aos quais estão conectados quando são desativados ou recarregados.
--   Os plug-ins que possuem patches personalizados do Harmony devem usar algum tipo de variável mutável no nome da instância do Harmony e devem usar UnPatchAll() em sua instância do Harmony quando o plug-in for desativado ou recarregado.
--   Quaisquer corrotinas iniciadas pelo plug-in em `OnEnabled()` também devem ser eliminadas quando o plug-in for desativado ou recarregado.
+- Os plug-ins que desejam oferecer suporte à Atualização Dinâmica precisam cancelar a assinatura de todos os eventos aos quais estão conectados quando são desativados ou recarregados.
+- Os plug-ins que possuem patches personalizados do Harmony devem usar algum tipo de variável mutável no nome da instância do Harmony e devem usar UnPatchAll() em sua instância do Harmony quando o plug-in for desativado ou recarregado.
+- Quaisquer corrotinas iniciadas pelo plug-in em `OnEnabled()` também devem ser eliminadas quando o plug-in for desativado ou recarregado.
 
 Tudo isso pode ser realizado nos métodos `OnReloaded()` ou `OnDisabled()` na classe do plug-in. Quando o EXILED recarrega os plug-ins, ele designa OnDisabled(), então `OnReloaded()`, então ele carregará nos novos Assemblies, e então executará `OnEnabled()`.
 
